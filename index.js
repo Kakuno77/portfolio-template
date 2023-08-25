@@ -20,7 +20,7 @@ app.get('/', function (_, res) {
         skills
     }
     console.log(sections)
-    res.render('index', { sections });
+    res.render('pages/index', { sections });
 });
 
 app.listen(8080);
