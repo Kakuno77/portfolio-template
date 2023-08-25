@@ -19,78 +19,102 @@
 
         </ul>
     </nav>
-        <% const {profile_picture, whoami, experiences, projects, skills} = sections %>
+    <% const {profile_picture, whoami, experiences, projects, skills}=sections %>
         <div class="container">
             <div class="side-picture">
                 <img src="<%= profile_picture.src %>" width="400" alt="<%= profile_picture.alt %>" />
             </div>
             <div class="content-container">
                 <div class="content-whoami">
-                    <h1 class="content-title"><%= whoami.title %></h1>
+                    <h1 class="content-title">
+                        <%= whoami.title %>
+                    </h1>
                     <div class="content-body">
                         <%= whoami.body %>
                     </div>
                 </div>
+
                 <div class="content-experience">
-                    <h1 class="content-title"><%= experiences.title %></h1>
+                    <h1 class="content-title">
+                        <%= experiences.title %>
+                    </h1>
                     <div class="content-body">
                         <div class="experiences-list">
                             <% for (const experience of experiences.items) { %>
-                            <div class="experience-item">
-                                <div class="experience-item-content">
-                                    <span class="experience-item-name"> <%= experience.name %></span>
+                                <div class="experience-item">
+                                    <div class="experience-item-years">
+                                        <%= experience.years %>
+                                    </div>
                                     <div class="experience-item-content">
-                                        <% for (const item of experience.list) { %>
-                                        <li><%= item %></li>
-                                        <% } %>
+                                        <span class="experience-item-name">
+                                            <%= experience.name %>
+                                        </span>
+                                        <div class="experience-item-content">
+                                            <% for (const item of experience.list) { %>
+                                                <li>
+                                                    <%= item %>
+                                                </li>
+                                                <% } %>
 
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="experience-item-years">
-                                    <%= experience.years %>
-                                </div>
-                            </div>
-                            <% } %>
+                                <hr class="horizontal-dashed-divider">
+
+                                <% } %>
                         </div>
                     </div>
                 </div>
                 <div class="content-projects">
-                    <h1 class="content-title"><%= projects.title %></h1>
+                    <h1 class="content-title">
+                        <%= projects.title %>
+                    </h1>
                     <div class="content-body">
                         <div class="projects-list">
                             <% for (const project of projects.items) { %>
-                            <div class="project-item">
-                                <div class="project-item-content">
-                                    <span class="project-item-name"> <%= project.name %></span>
+                                <div class="project-item">
+                                    <div class="project-item-years">
+                                        <%= project.years %>
+                                    </div>
                                     <div class="project-item-content">
-                                        <% for (const item of project.list) { %>
-                                        <li><%= item %></li>
-                                        <% } %>
+                                        <span class="project-item-name">
+                                            <%= project.name %>
+                                        </span>
+                                        <div class="project-item-content">
+                                            <% for (const item of project.list) { %>
+                                                <li>
+                                                    <%= item %>
+                                                </li>
+                                                <% } %>
 
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="project-item-years">
-                                    <%= project.years %>
-                                </div>
-                            </div>
-                            <% } %>
+                                <hr class="horizontal-dashed-divider">
+
+                                <% } %>
                         </div>
                     </div>
                 </div>
                 <div class="content-skills">
-                    <h1 class="content-title"><%= skills.title %></h1>
+                    <h1 class="content-title">
+                        <%= skills.title %>
+                    </h1>
                     <div class="content-body">
                         <div class="skills-list">
-                        <div class="skills-fields">
-                            <% for (const skill of skills.items) { %>
-                                    <div>   <%= skill.name %> </div>
-                            <% } %>
+                            <div class="skills-fields">
+                                <% for (const skill of skills.items) { %>
+                                    <div>
+                                        <%= skill.name %>
+                                    </div>
+                                    <% } %>
 
-                        </div>
-                        <div class="skills-items">
-                            <% for (const skill of skills.items) { %>
+                            </div>
+                            <div class="skills-items">
+                                <% for (const skill of skills.items) { %>
 
-                                    <div><%= skill.items.join(', ') %></div>
+                                    <div>
+                                        <%= skill.items.join(', ') %></div>
 
                             <% } %>
 

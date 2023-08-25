@@ -12,9 +12,10 @@ body {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
-     }
+    }
 }
 
 .side-picture {
@@ -22,7 +23,7 @@ body {
 }
 
 .container {
-    display:  flex;
+    display: flex;
     flex-wrap: wrap;
     margin-right: 50px;
     margin-left: 50px;
@@ -34,44 +35,61 @@ body {
     flex-direction: column;
     justify-content: space-around;
 
-    & > * {
+    &>* {
         margin: 10px;
     }
 }
 
-.experience-item, .project-item {
-    display: flex;
-    justify-content: space-between;
+.content-title {
+    border-left: 10px solid black;
+    padding-left: 20px;
 }
 
-.experience-item-content, .project-item-content {
+.experience-item,
+.project-item {
+    display: flex;
+}
+
+.experience-item-content,
+.project-item-content {
     display: flex;
     flex-direction: column;
 }
 
-.experiences-list, .projects-list {
+.experiences-list,
+.projects-list {
     display: flex;
     flex-direction: column;
 
-    & > * {
+    &>* {
         margin-top: 40px;
         position: relative;
     }
 }
 
-.experiences-list:first-child, .projects-list:first-child {
+.experiences-list:first-child,
+.projects-list:first-child {
     margin-top: -20px !important;
 }
-.experience-item-name, .experience-item-years, .project-item-name, .project-item-years {
+
+.experience-item-name,
+.experience-item-years,
+.project-item-name,
+.project-item-years {
     font-weight: bold;
+    padding-right: 40px;
 }
-.experience-item::before, .project-item::before {
-    content: '';
-    position: absolute;
-    height: 2px;
+
+hr {
+    border-color: $horizontal-sep-color;
     width: 100%;
-    background-color: $horizontal-sep-color;
-    top: -20px
+
+    &.horizontal-dashed-divider {
+        border-style: dashed;
+
+    }
+
+    &.horizontal-continuous-divider {}
 }
 
 li {
@@ -83,23 +101,25 @@ li {
         content: '\2014';
         position: absolute;
         margin-left: -20px;
-      }
+    }
 }
 
 
 .skills-list {
     display: flex;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
         margin-right: 10px;
     }
 }
+
 .skills-fields {
     text-align: right;
 
 }
 
-.skills-fields > *, .skills-items > * {
+.skills-fields>*,
+.skills-items>* {
     margin: 3px 0 3px 0;
 
 }
