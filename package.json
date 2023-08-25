@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "sass-compile": "cd public/style && sass --watch index.scss index.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
