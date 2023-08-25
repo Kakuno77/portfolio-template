@@ -1,0 +1,35 @@
+{
+    "title": "Compétences",
+    "items": [
+        {
+            "name": "Programmation",
+            "items": [
+                "C", "C++", "Java", "Python"
+            ]
+        },
+        {
+            "name": "Web",
+            "items": [
+                "HTML", "CSS", "PHP", "Javascript", "MySQL", "PostgresSql", "MongoDB"
+            ]
+        },
+        {
+            "name": "Framework",
+            "items": [
+                "Node.js", "Vue", "React", "Angular", "Java Spring"
+            ]
+        },
+        {
+            "name": "Outils",
+            "items": [
+                "Docker", "Github/Gitlab", "Kubernetes"
+            ]
+        },
+        {
+            "name": "Méthodologies",
+            "items": [
+                "Agile", "Scrum"
+            ]
+        }
+    ]
+}

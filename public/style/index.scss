@@ -1,0 +1,105 @@
+$horizontal-sep-color: lightgray;
+$main-font: 'Open Sans', sans-serif;
+
+body {
+    font-family: $main-font;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.side-picture {
+    margin: 100px 70px 0 0;
+}
+
+.container {
+    display:  flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & > * {
+        margin: 10px;
+    }
+}
+
+.experience-item, .project-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-item-content, .project-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiences-list, .projects-list {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+        margin-top: 40px;
+        position: relative;
+    }
+}
+
+.experiences-list:first-child, .projects-list:first-child {
+    margin-top: -20px !important;
+}
+.experience-item-name, .experience-item-years, .project-item-name, .project-item-years {
+    font-weight: bold;
+}
+.experience-item::before, .project-item::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $horizontal-sep-color;
+    top: -20px
+}
+
+li {
+    list-style-type: none;
+    max-width: 600px;
+    margin: 3px 0 3px 0;
+
+    &:before {
+        content: '\2014';
+        position: absolute;
+        margin-left: -20px;
+      }
+}
+
+
+.skills-list {
+    display: flex;
+
+    & > div:nth-child(1) {
+        margin-right: 10px;
+    }
+}
+.skills-fields {
+    text-align: right;
+
+}
+
+.skills-fields > *, .skills-items > * {
+    margin: 3px 0 3px 0;
+
+}
