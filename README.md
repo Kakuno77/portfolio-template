@@ -6,7 +6,7 @@ installer les dependances.
 ```bash
 npm i
 ```
-compiler les fichier SCSS
+compiler les fichiers SCSS
 ```bash
 npm run sass-compile
 ```
