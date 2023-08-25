@@ -10,6 +10,7 @@ const whoami = readDataFromJson('./json/whoami.json')
 const projects = readDataFromJson('./json/projects.json')
 const profilePicture = readDataFromJson('./json/profile-picture.json')
 const skills = readDataFromJson('./json/skills.json')
+const logo = readDataFromJson('./json/logo.json')
 
 app.get('/', function (_, res) {
     const sections = {
@@ -17,7 +18,8 @@ app.get('/', function (_, res) {
         whoami,
         experiences,
         projects,
-        skills
+        skills,
+        logo
     }
     console.log(sections)
     res.render('pages/index', { sections });
