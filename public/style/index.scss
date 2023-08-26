@@ -134,24 +134,8 @@ body {
         }
     }
 
-
-    .skills-list {
-        display: flex;
-
-        &>div:nth-child(1) {
-            margin-right: 10px;
-        }
-    }
-
-    .skills-fields {
-        text-align: right;
-
-    }
-
-    .skills-fields>*,
-    .skills-items>* {
-        margin: 3px 0 3px 0;
-
+    .skills-field {
+        padding:0 10px 0 0;
     }
 
 }
