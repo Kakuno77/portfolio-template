@@ -25,5 +25,6 @@ app.get('/', function (_, res) {
     res.render('pages/index', { sections });
 });
 
-app.listen(8080);
-console.log('url: http://localhost:8080');
+app.listen(8080, function() {
+    console.log('url: http://localhost:8080');
+});
