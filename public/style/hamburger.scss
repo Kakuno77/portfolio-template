@@ -53,7 +53,7 @@ nav {
         height: 26px;
         width: 32px;
         position: absolute;
-        top: 17px;
+        top: 27px;
         left: 20px;
         z-index: 2;
         display: flex;
@@ -109,6 +109,7 @@ nav {
         font-size: 1.2rem;
         color: #0e2431;
         z-index: 1;
+        top: 13px;
     }
 
     .nav-container input[type="checkbox"]:checked~.menu-items {
