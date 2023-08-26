@@ -24,13 +24,19 @@ body {
         margin: 100px 90px 0 0;
     }
 
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    img {
+        position: fixed;
     }
 
-    .container>*:hover {
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 50px;
+    }
+
+    .content-container:hover,
+    img:hover {
         animation-name: float;
         animation-duration: 2s;
         animation-iteration-count: infinite;
@@ -56,6 +62,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        margin-left: 450px;
+
         &>* {
             margin: 10px;
         }
@@ -143,5 +151,27 @@ body {
     .skills-items>* {
         margin: 3px 0 3px 0;
 
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        .container {
+            flex-wrap: wrap
+        }
+
+        img {
+            position: relative;
+        }
+
+        .content-container {
+            margin-left: 0px;
+
+        }
+
+        .side-picture {
+            margin: 0;
+        }
     }
 }

@@ -1,5 +1,8 @@
 nav {
-
+    position: fixed;
+    top:0;
+    z-index: 2;
+    background-color: white;
     .navbar {
         width: 100%;
         /*box-shadow: 0 1px 4px rgb(146 161 176 / 15%);*/
@@ -8,6 +11,7 @@ nav {
 
     .navbar .menu-items {
         display: flex;
+        box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     }
 
     .navbar .nav-container li {
@@ -104,7 +108,7 @@ nav {
         left: 70px;
         font-size: 1.2rem;
         color: #0e2431;
-        z-index: 10;
+        z-index: 1;
     }
 
     .nav-container input[type="checkbox"]:checked~.menu-items {
@@ -124,5 +128,13 @@ nav {
     }
 
     .nav-container input[type="checkbox"]:checked~.logo {
+    }
+
+}
+@media screen and (max-width: 1000px) {
+
+    nav {
+        width: 100%;
+
     }
 }
