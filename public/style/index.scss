@@ -1,8 +1,9 @@
 $horizontal-sep-color: lightgray;
-$main-font: 'Open Sans', sans-serif;
+$main-font: 'New Boba', 'Open Sans', sans-serif;
 
 body {
     font-family: $main-font;
+    font-size: 22px;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -26,7 +27,6 @@ body {
 
     img {
         position: fixed;
-        filter: brightness(70%);
     }
 
     .container {
