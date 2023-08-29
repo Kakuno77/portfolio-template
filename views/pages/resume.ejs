@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/resume.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,17 +15,17 @@
 
 <body>
 
-    <% const {profile_picture, whoami, logo, about}=sections %>
+    <% const {profile_picture, experiences, projects, skills, logo}=sections %>
     <%- include('../components/navbar', {logo}) %>
-        <div class="index">
-            <div class="heading-container">
-              <%- include('../components/index/picture', {profile_picture}) %>
-              <%- include('../components/index/heading', {about}) %>
-            </div>
-            <div class="content-container">
-              testtoto
-              <%- include('../components/index/content', {about}) %>
+        <div class="main">
+            <div class="container">
 
+            <%- include('../components/resume/picture', {profile_picture}) %>
+                <div class="content-container">
+                        <%- include('../components/resume/experiences', {experiences}) %>
+                            <%- include('../components/resume/projects', {projects}) %>
+                                <%- include('../components/resume/skills', {skills}) %>
+                </div>
             </div>
 
         </div>

@@ -1,164 +1,23 @@
-$horizontal-sep-color: lightgray;
-$main-font: 'New Boba', 'Open Sans', sans-serif;
+@import 'global.scss';
 
-body {
-    font-family: $main-font;
-    font-size: 21px;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    margin: 0;
+
+.index {
+
+  margin-right: 220px;
+  margin-left: 220px;
+
+  & > * {
+    margin-bottom: 40px  ;
+  }
+  .heading-container {
+    display: flex;
+  }
+ .heading-wrapper {
+    display: flex ;
+    align-items: center;
+
+    .heading {
+      font-size: 35px;
+    }
+  }
 }
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.main {
-    .side-picture {
-        margin: 100px 90px 0 0;
-    }
-
-    img {
-        position: fixed;
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        margin: 50px;
-    }
-
-    .content-container:hover,
-    img:hover {
-        animation-name: float;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-
-        animation-timing-function: ease-in-out
-    }
-
-    @keyframes float {
-        0% {
-            transform: translatey(0px);
-        }
-
-        50% {
-            transform: translatey(-10px);
-        }
-
-        100% {
-            transform: translatey(0px);
-        }
-    }
-
-    .content-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-left: 450px;
-
-        &>* {
-            margin: 10px;
-        }
-    }
-
-    .content-title {
-        border-left: 10px solid black;
-        padding-left: 20px;
-    }
-
-    .experience-item,
-    .project-item {
-        display: flex;
-    }
-
-    .experience-item-content,
-    .project-item-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .experiences-list,
-    .projects-list {
-        display: flex;
-        flex-direction: column;
-
-        &>* {
-            margin-top: 40px;
-            position: relative;
-        }
-    }
-
-    .experiences-list:first-child,
-    .projects-list:first-child {
-        margin-top: -20px !important;
-    }
-
-    .experience-item-name,
-    .experience-item-years,
-    .project-item-name,
-    .project-item-years {
-        font-weight: bold;
-        padding-right: 40px;
-    }
-
-    hr {
-        border-color: $horizontal-sep-color;
-        width: 100%;
-
-        &.horizontal-dashed-divider {
-            border-style: dashed;
-
-        }
-
-        &.horizontal-continuous-divider {}
-    }
-
-    li {
-        list-style-type: none;
-        max-width: 600px;
-        margin: 3px 0 3px 0;
-
-        &:before {
-            content: '\2014';
-            position: absolute;
-            margin-left: -28px;
-	        margin-top: -5px;
-        }
-    }
-
-    .skills-field {
-        padding:0 10px 0 0;
-    }
-
-}
-
-@media screen and (max-width: 1000px) {
-    .main {
-        .container {
-            flex-wrap: wrap
-        }
-
-        img {
-            position: relative;
-        }
-
-        .content-container {
-            margin-left: 0px;
-
-        }
-
-        .side-picture {
-            margin: 0;
-        }
-    }
-}
-@import 'hamburger.scss';
