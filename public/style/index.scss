@@ -3,9 +3,9 @@
 
 .index {
 
-  margin-right: 220px;
-  margin-left: 220px;
-
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px;
   &>* {
     margin-bottom: 40px;
   }
