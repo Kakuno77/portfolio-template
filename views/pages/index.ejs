@@ -15,7 +15,7 @@
 
 <body>
 
-    <% const {profile_picture, whoami, logo, about}=sections %>
+    <% const {profile_picture, whoami, logo, about, projects}=sections %>
     <%- include('../components/navbar', {logo}) %>
         <div class="index">
             <div class="heading-container">
@@ -23,9 +23,7 @@
               <%- include('../components/index/heading', {about}) %>
             </div>
             <div class="content-container">
-              testtoto
-              <%- include('../components/index/content', {about}) %>
-
+              <%- include('../components/index/projects', {projects}) %>
             </div>
 
         </div>

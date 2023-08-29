@@ -7,8 +7,12 @@ app.use(express.static('public'));
 const { readDataFromJson } = require('./helpers/json/dataReader')
 const experiences = readDataFromJson('./json/resume/experiences.json')
 const whoami = readDataFromJson('./json/index/whoami.json')
-const projects = readDataFromJson('./json/resume/projects.json')
-const profilePicture = readDataFromJson('./json/resume/profile-picture.json')
+const projectsResume = readDataFromJson('./json/resume/projects.json')
+const projectsIndex = readDataFromJson('./json/index/projects.json')
+
+const profilePicture = readDataFromJson('./json/index/profile-picture.json')
+const picture = readDataFromJson('./json/resume/picture.json')
+
 const skills = readDataFromJson('./json/resume/skills.json')
 const logo = readDataFromJson('./json/resume/logo.json')
 const about = readDataFromJson('./json/index/about.json')
@@ -18,7 +22,8 @@ app.get('/', function (_, res) {
         profile_picture: profilePicture,
         whoami,
         logo,
-        about
+        about,
+        projects: projectsIndex
     }
     console.log(sections)
     res.render('pages/index', { sections });
@@ -26,9 +31,9 @@ app.get('/', function (_, res) {
 
 app.get('/resume', function (_, res) {
     const sections = {
-        profile_picture: profilePicture,
+        picture,
         experiences,
-        projects,
+        projects: projectsResume,
         skills,
         logo
     }

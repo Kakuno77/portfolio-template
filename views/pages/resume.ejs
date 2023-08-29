@@ -15,12 +15,12 @@
 
 <body>
 
-    <% const {profile_picture, experiences, projects, skills, logo}=sections %>
+    <% const {picture, experiences, projects, skills, logo}=sections %>
     <%- include('../components/navbar', {logo}) %>
         <div class="main">
             <div class="container">
 
-            <%- include('../components/resume/picture', {profile_picture}) %>
+            <%- include('../components/resume/picture', {picture}) %>
                 <div class="content-container">
                         <%- include('../components/resume/experiences', {experiences}) %>
                             <%- include('../components/resume/projects', {projects}) %>
