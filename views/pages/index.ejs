@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/new-boba" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -31,6 +32,12 @@
             window.onload = function(){
                 document.querySelector('.menu-items').style.display = 'flex'
             }
+            $('.project-item').on('mouseenter', function() {
+                console.log('go')
+            })
+            $('.project-item').on('mouseleave', function() {
+                console.log('leave')
+            })
         </script>
 </body>
 

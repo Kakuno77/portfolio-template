@@ -51,21 +51,19 @@
         
         &:nth-child(odd) {
           div {
-          border-right: 1px dashed black;
           padding-right: 70px;
 
           }
         }
-        .project-item-picture {}
-        display: flex;
-        align-items: center;
-        .project-item-content {
-
-          .project-item-title {}
-
-          .project-item-description {
-            font-size: 30px;
-          }
+        .project-item-picture {
+          position: relative;
+        .project-item-description {
+          position: absolute;
+          top: 0;
+          left: 0;
+          /*font-size: 30px;*/
+          opacity: 0.1;
+        }
         }
       }
     }

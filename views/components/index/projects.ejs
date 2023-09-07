@@ -1,20 +1,12 @@
 <div class="projects">
   <% for (const project of projects.items) { %>
     <div class="project-item">
-      <div class="project-item-picture side-picture">
-        <img src="<%= project.picture.src %>"  width="350px"/>
+        <div class="project-item-picture side-picture">
+          <img src="<%= project.picture.src %>"  width="350px"/>
+          <div class="project-item-description">
+            <%- project.description %>
+          </div> 
       </div>
-      <!--<div class="project-item-content">
-        <h2 class="project-item-title">
-          <%= project.name %>
-
-        </h2>
-        <span class="project-item-description">
-          <%= project.description %>
-
-        </span>
-      </div>
-    -->
     </div>
     <% } %>
 
