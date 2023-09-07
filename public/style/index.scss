@@ -3,9 +3,6 @@
 
 .index {
 
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1400px;
   &>* {
     margin-bottom: 40px;
   }
@@ -18,58 +15,60 @@
     display: flex;
     height: 81vh;
     align-items: center;
+    max-width: 1400px;
+
+    margin-right: auto;
+    margin-left: auto;
 
     .heading-wrapper {
       display: flex;
 
-      .heading {
-        font-size: 45px;
-      }
     }
   }
 
 
   .content-container {
     margin-top: 20vh;
-    
 
-  .projects {
+    max-width: 2000px;
+
     margin-right: auto;
     margin-left: auto;
-    max-width: 1000px;
+
+    .projects {
+
       .project-item {
+        position: relative;
+        right: 100vw;
+        padding: 0px 25px 25px 0;
         display: flex;
-
-        &:nth-child(even) {
-          justify-content: right;
-          div {
-
-            border-left: 1px dashed black;
-            padding-left: 70px;
-          }
-        }
         
-        &:nth-child(odd) {
-          div {
-          padding-right: 70px;
+          .project-item-description {
+            padding: 0px 0 0 100px;
+            display: flex;
+            flex-direction: column;
 
+            .text {
+              max-width: 1000px;
+            }
           }
-        }
-        .project-item-picture {
-          position: relative;
-        .project-item-description {
-          position: absolute;
-          top: 0;
-          left: 0;
-          /*font-size: 30px;*/
-          opacity: 0.1;
-        }
-        }
+        
       }
     }
+
   }
 
   .side-picture {
     margin-right: 90px;
   }
+  .heading-1 {
+    font-size: 2em;
+  }
+  .heading-2 {
+    font-size: 1.7em;
+  }
+
+}
+nav {
+  width: 100%;
 }

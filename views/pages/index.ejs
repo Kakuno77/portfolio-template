@@ -11,34 +11,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/new-boba" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
 
     <% const {profile_picture, whoami, logo, about, projects}=sections %>
-    <%- include('../components/navbar', {logo}) %>
-        <div class="index">
-            <div class="heading-container">
-              <%- include('../components/index/picture', {profile_picture}) %>
-              <%- include('../components/index/heading', {about}) %>
-            </div>
-            <div class="content-container">
-              <%- include('../components/index/projects', {projects}) %>
-            </div>
+        <%- include('../components/navbar', {logo}) %>
+            <div class="index">
+                <div class="heading-container">
+                    <%- include('../components/index/picture', {profile_picture}) %>
+                        <%- include('../components/index/heading', {about}) %>
+                </div>
+                <div class="content-container">
+                    <%- include('../components/index/projects', {projects}) %>
+                </div>
 
-        </div>
-        <script>
-            window.onload = function(){
-                document.querySelector('.menu-items').style.display = 'flex'
-            }
-            $('.project-item').on('mouseenter', function() {
-                console.log('go')
-            })
-            $('.project-item').on('mouseleave', function() {
-                console.log('leave')
-            })
-        </script>
+            </div>
+            <script>
+                window.onload = function () {
+                    document.querySelector('.menu-items').style.display = 'flex'
+                    function checkVisible(elm, evalType) {
+                        evalType = evalType || "visible";
+
+                        var vpH = $(window).height(), // Viewport Height
+                            st = $(window).scrollTop(), // Scroll Top
+                            y = elm.offset().top,
+                            elementHeight = elm.height();
+
+                        if (evalType === "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
+                        if (evalType === "above") return ((y < (vpH + st)));
+                    }
+                    const scrollHandleParallax = function (parentElement) {
+
+                        $(parentElement + ' > div').each((index, element) => {
+                            //console.log($(document).scrollTop())
+
+                            /*const documentScrollTop = $(document).scrollTop()
+                            const elementScrollTop = (($(element).position().top) - ($(element).innerHeight() * 1.5))
+                            console.log('document scrolltop: ' + documentScrollTop)
+                            console.log('element scrolltop: ' + elementScrollTop)
+                            console.log(window.innerHeight)*/
+                            if (/*documentScrollTop >= elementScrollTop ||*/ checkVisible($(element)))
+                                $(element).animate({
+                                    'right': 0,
+                                }, 1000)
+                        });
+                    }
+                    $(document).on('scroll', function () {
+                        scrollHandleParallax('.heading-container')
+                        scrollHandleParallax('.projects')
+
+                    })
+                    scrollHandleParallax('.heading-container')
+                    scrollHandleParallax('.projects')
+                }
+
+            </script>
 </body>
 
 </html>

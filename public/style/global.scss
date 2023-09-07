@@ -1,5 +1,5 @@
 $horizontal-sep-color: lightgray;
-$main-font: 'New Boba', 'Open Sans', sans-serif;
+$main-font: 'Sofia Pro', 'New Boba', 'Open Sans', sans-serif;
 
 @keyframes fadeInAnimation {
   0% {
@@ -17,7 +17,7 @@ body {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
+    margin: 0;
     & > div {
         margin-top: 50px !important;
     }
