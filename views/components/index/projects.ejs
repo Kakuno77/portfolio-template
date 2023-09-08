@@ -1,12 +1,8 @@
 <div class="projects">
   <% for (const project of projects.items) { %>
     <div class="project-item">
-          <%  settings = `width: 650px;
-                          height: 550px;
-                          background-position: center;
-                          background-repeat: no-repeat;` %>
 
-          <div style="background-image: url('<%= project.picture.src %>'); <%= settings %>"></div>
+          <div class="project-item-picture" style="background-image: url('<%= project.picture.src %>');"></div>
           <div class="project-item-description">
             <p class="heading-2">
               <%- project.name %>
