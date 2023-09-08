@@ -70,7 +70,7 @@
   }
 
   .heading-1 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .heading-2 {
@@ -84,7 +84,9 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-
+  .heading-1 {
+    font-size: 1.5em !important;
+  }
   .content-container {
 
     .project-item {
