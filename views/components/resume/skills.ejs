@@ -1,17 +1,17 @@
 <div class="content-skills">
-    <h1 class="content-title">
-        <%= skills.title %>
-    </h1>
-    <div class="content-body">
-        <div class="skills-list">
-            <table>
-                <% for (const skill of skills.items) { %>
-                    <tr>
-                        <td class="skills-field">
-                            <%= skill.name %>
-                        </td>
-                        <td class="skills-names">
-                            <%= skill.items.join(', ')%>
+  <h1 class="content-title">
+    <%= skills.title %>
+  </h1>
+  <div class="content-body">
+    <div class="skills-list">
+      <table>
+        <% for (const skill of skills.items) { %>
+          <tr>
+            <td class="skills-field">
+              <%= skill.name %>
+            </td>
+            <td class="skills-names">
+              <%= skill.items.join(', ')%>
                         </td>
                     </tr>
                     <% } %>

@@ -3,22 +3,23 @@ $main-font: 'Sofia Pro', 'New Boba', 'Open Sans', sans-serif;
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 body {
-    font-family: $main-font;
-    font-size: 21px;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    margin: 0;
-    & > div {
-        margin-top: 50px !important;
-    }
+  font-family: $main-font;
+  font-size: 21px;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin: 0;
+
+  &>div {
+    margin-top: 50px !important;
+  }
 }

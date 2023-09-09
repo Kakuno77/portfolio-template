@@ -2,15 +2,15 @@
   <% for (const project of projects.items) { %>
     <div class="project-item">
 
-          <div class="project-item-picture" style="background-image: url('<%= project.picture.src %>');"></div>
-          <div class="project-item-description">
-            <p class="heading-2">
-              <%- project.name %>
-            </p>
-            <p class="text">
-              <%- project.description %>
+      <div class="project-item-picture" style="background-image: url('<%= project.picture.src %>');"></div>
+      <div class="project-item-description">
+        <p class="heading-2">
+          <%- project.name %>
+        </p>
+        <p class="text">
+          <%- project.description %>
 
-            </p>
+        </p>
       </div>
     </div>
     <% } %>

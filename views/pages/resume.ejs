@@ -2,40 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/resume.css" />
-    <link rel="stylesheet" href="style/navbar.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/new-boba" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/resume.css" />
+  <link rel="stylesheet" href="style/navbar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/new-boba" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <% const {picture, experiences, projects, skills, logo}=sections %>
+  <% const {picture, experiences, projects, skills, logo}=sections %>
     <%- include('../components/navbar', {logo}) %>
-        <div class="main">
-            <div class="container">
+      <div class="main">
+        <div class="container">
 
-            <%- include('../components/resume/picture', {picture}) %>
-                <div class="content-container">
-                        <%- include('../components/resume/experiences', {experiences}) %>
-                            <%- include('../components/resume/projects', {projects}) %>
-                                <%- include('../components/resume/skills', {skills}) %>
-                </div>
+          <%- include('../components/resume/picture', {picture}) %>
+            <div class="content-container">
+              <%- include('../components/resume/experiences', {experiences}) %>
+                <%- include('../components/resume/projects', {projects}) %>
+                  <%- include('../components/resume/skills', {skills}) %>
             </div>
-
         </div>
-        <script>
-            window.onload = function(){
-                document.querySelector('.menu-items').style.display = 'flex'
-            }
-        </script>
+
+      </div>
+      <script>
+        window.onload = function () {
+          document.querySelector('.menu-items').style.display = 'flex'
+        }
+      </script>
 </body>
 
 </html>

@@ -1,31 +1,31 @@
 <div class="content-experience">
-    <h1 class="content-title">
-        <%= experiences.title %>
-    </h1>
-    <div class="content-body">
-        <div class="experiences-list">
-            <% for (const experience of experiences.items) { %>
-                <div class="experience-item">
-                    <div class="experience-item-years">
-                        <%= experience.years %>
-                    </div>
-                    <div class="experience-item-content">
-                        <span class="experience-item-name">
-                            <%= experience.name %>
-                        </span>
-                        <div class="experience-item-content">
-                            <% for (const item of experience.list) { %>
-                                <li>
-                                    <%= item %>
-                                </li>
-                                <% } %>
-
-                        </div>
-                    </div>
-                </div>
-                <hr class="horizontal-dashed-divider">
-
+  <h1 class="content-title">
+    <%= experiences.title %>
+  </h1>
+  <div class="content-body">
+    <div class="experiences-list">
+      <% for (const experience of experiences.items) { %>
+        <div class="experience-item">
+          <div class="experience-item-years">
+            <%= experience.years %>
+          </div>
+          <div class="experience-item-content">
+            <span class="experience-item-name">
+              <%= experience.name %>
+            </span>
+            <div class="experience-item-content">
+              <% for (const item of experience.list) { %>
+                <li>
+                  <%= item %>
+                </li>
                 <% } %>
+
+            </div>
+          </div>
         </div>
+        <hr class="horizontal-dashed-divider">
+
+        <% } %>
     </div>
+  </div>
 </div>

@@ -19,42 +19,42 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use(express.static('public'));
 app.use(minifyHTML({
-    override:      true,
-    exception_url: false,
-    htmlMinifier: {
-        removeComments:            true,
-        collapseWhitespace:        true,
-        collapseBooleanAttributes: true,
-        removeAttributeQuotes:     true,
-        removeEmptyAttributes:     true,
-        minifyJS:                  true
-    }
+  override: true,
+  exception_url: false,
+  htmlMinifier: {
+    removeComments: true,
+    collapseWhitespace: true,
+    collapseBooleanAttributes: true,
+    removeAttributeQuotes: true,
+    removeEmptyAttributes: true,
+    minifyJS: true
+  }
 }));
 
 app.get('/', function (_, res) {
-    const sections = {
-        profile_picture: profilePicture,
-        whoami,
-        logo,
-        about,
-        projects: projectsIndex
-    }
-    console.log(sections)
-    res.render('pages/index', { sections });
+  const sections = {
+    profile_picture: profilePicture,
+    whoami,
+    logo,
+    about,
+    projects: projectsIndex
+  }
+  console.log(sections)
+  res.render('pages/index', { sections });
 });
 
 app.get('/resume', function (_, res) {
-    const sections = {
-        picture,
-        experiences,
-        projects: projectsResume,
-        skills,
-        logo
-    }
-    console.log(sections)
-    res.render('pages/resume', { sections });
+  const sections = {
+    picture,
+    experiences,
+    projects: projectsResume,
+    skills,
+    logo
+  }
+  console.log(sections)
+  res.render('pages/resume', { sections });
 });
 
-app.listen(8080, function() {
-    console.log('url: http://localhost:8080');
+app.listen(8080, function () {
+  console.log('url: http://localhost:8080');
 });

@@ -1,31 +1,31 @@
 <div class="content-projects">
-    <h1 class="content-title">
-        <%= projects.title %>
-    </h1>
-    <div class="content-body">
-        <div class="projects-list">
-            <% for (const project of projects.items) { %>
-                <div class="project-item">
-                    <div class="project-item-years">
-                        <%= project.years %>
-                    </div>
-                    <div class="project-item-content">
-                        <span class="project-item-name">
-                            <%= project.name %>
-                        </span>
-                        <div class="project-item-content">
-                            <% for (const item of project.list) { %>
-                                <li>
-                                    <%= item %>
-                                </li>
-                                <% } %>
-
-                        </div>
-                    </div>
-                </div>
-                <hr class="horizontal-dashed-divider">
-
+  <h1 class="content-title">
+    <%= projects.title %>
+  </h1>
+  <div class="content-body">
+    <div class="projects-list">
+      <% for (const project of projects.items) { %>
+        <div class="project-item">
+          <div class="project-item-years">
+            <%= project.years %>
+          </div>
+          <div class="project-item-content">
+            <span class="project-item-name">
+              <%= project.name %>
+            </span>
+            <div class="project-item-content">
+              <% for (const item of project.list) { %>
+                <li>
+                  <%= item %>
+                </li>
                 <% } %>
+
+            </div>
+          </div>
         </div>
+        <hr class="horizontal-dashed-divider">
+
+        <% } %>
     </div>
+  </div>
 </div>
