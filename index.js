@@ -1,8 +1,5 @@
 const express = require('express');
-const app = express();
-app.set('view engine', 'ejs');
-app.set('views', './views');
-app.use(express.static('public'));
+const minifyHTML = require('express-minify-html');
 
 const { readDataFromJson } = require('./helpers/json/dataReader')
 const experiences = readDataFromJson('./json/resume/experiences.json')
@@ -16,6 +13,23 @@ const picture = readDataFromJson('./json/resume/picture.json')
 const skills = readDataFromJson('./json/resume/skills.json')
 const logo = readDataFromJson('./json/resume/logo.json')
 const about = readDataFromJson('./json/index/about.json')
+
+const app = express();
+app.set('view engine', 'ejs');
+app.set('views', './views');
+app.use(express.static('public'));
+app.use(minifyHTML({
+    override:      true,
+    exception_url: false,
+    htmlMinifier: {
+        removeComments:            true,
+        collapseWhitespace:        true,
+        collapseBooleanAttributes: true,
+        removeAttributeQuotes:     true,
+        removeEmptyAttributes:     true,
+        minifyJS:                  true
+    }
+}));
 
 app.get('/', function (_, res) {
     const sections = {
