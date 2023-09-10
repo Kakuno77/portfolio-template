@@ -3,10 +3,6 @@
 
 .index {
 
-  &>* {
-    margin-bottom: 40px;
-  }
-
   img {
     border-radius: 10px;
   }
@@ -38,6 +34,10 @@
     .projects {
 
       .project-item {
+        &:last-child {
+          padding: 0 !important;
+        }
+
         position: relative;
         right: 100vw;
         padding: 0px 25px 25px 0;
