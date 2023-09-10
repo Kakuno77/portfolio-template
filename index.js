@@ -3,7 +3,6 @@ const minifyHTML = require('express-minify-html');
 
 const { readDataFromJson } = require('./helpers/json/dataReader')
 const experiences = readDataFromJson('./json/resume/experiences.json')
-const whoami = readDataFromJson('./json/index/whoami.json')
 const projectsResume = readDataFromJson('./json/resume/projects.json')
 const projectsIndex = readDataFromJson('./json/index/projects.json')
 
@@ -34,7 +33,6 @@ app.use(minifyHTML({
 app.get('/', function (_, res) {
   const sections = {
     profile_picture: profilePicture,
-    whoami,
     logo,
     about,
     projects: projectsIndex
