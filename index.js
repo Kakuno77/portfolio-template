@@ -1,5 +1,6 @@
 const express = require('express');
 const minifyHTML = require('express-minify-html');
+const dotenv = require('dotenv')
 
 const { readDataFromJson } = require('./helpers/json/dataReader')
 const experiences = readDataFromJson('./json/resume/experiences.json')
@@ -14,21 +15,25 @@ const logo = readDataFromJson('./json/resume/logo.json')
 const about = readDataFromJson('./json/index/about.json')
 
 const app = express();
+
 app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use(express.static('public'));
 app.use(minifyHTML({
-  override: true,
-  exception_url: false,
-  htmlMinifier: {
-    removeComments: true,
-    collapseWhitespace: true,
-    collapseBooleanAttributes: true,
-    removeAttributeQuotes: true,
-    removeEmptyAttributes: true,
-    minifyJS: true
-  }
+    override: true,
+    exception_url: false,
+    htmlMinifier: {
+        removeComments: true,
+        collapseWhitespace: true,
+        collapseBooleanAttributes: true,
+        removeAttributeQuotes: true,
+        removeEmptyAttributes: true,
+        minifyJS: true
+    }
 }));
+
+dotenv.config();
+const PORT = process.env['PORT'] || 8080;
 
 app.get('/', function (_, res) {
   const sections = {
@@ -53,6 +58,6 @@ app.get('/resume', function (_, res) {
   res.render('pages/resume', { sections });
 });
 
-app.listen(8080, function () {
-  console.log('url: http://localhost:8080');
+app.listen(PORT, function() {
+    console.log('url: http://localhost:'+PORT);
 });
