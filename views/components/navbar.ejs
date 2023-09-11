@@ -14,8 +14,11 @@
       <div class="menu-items">
         <li><a href="/">Home</a></li>
         <li><a href="#">about</a></li>
-        <li><a href="#">blogs</a></li>
-        <li><a href="resume">CV</a></li>
+        <% const { blogs } = sections %>
+        <% for (const blog of blogs) {%>
+            <li><a href="/blog/<%- blog.slug %>"><%- blog.title %></a></li>
+          <% }%>
+        <li><a href="/resume">CV</a></li>
         <li><a href="#">contact</a></li>
       </div>
     </div>

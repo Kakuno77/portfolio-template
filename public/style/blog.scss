@@ -1,0 +1,17 @@
+@import 'global.scss';
+
+.blog {
+  margin: 100px 0 0 0 !important;
+
+  .block {
+    display: flex;
+  }
+  .row {
+    flex-direction: row;
+  }
+}
+
+
+nav {
+  width: 100%;
+}

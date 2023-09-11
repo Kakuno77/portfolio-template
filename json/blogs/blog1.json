@@ -1,0 +1,26 @@
+{
+  "slug": "blog1",
+  "title": "blog1",
+  "content": {
+    "blocks": [
+      {
+        "direction": "row",
+        "elements": [
+          {
+            "type": "image",
+            "sort": 2,
+            "src": "https://media.gqmagazine.fr/photos/639ae5bcaa342b4423bab372/3:2/w_3594,h_2396,c_limit/MCDBAVV_EC017.jpg",
+            "width": "500",
+            "customCss": {
+            }
+          },
+          {
+            "type": "text",
+            "sort": 1,
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, gravida sit amet justo eget, efficitur eleifend magna. Praesent odio orci, varius a vestibulum eu, iaculis eget quam. In mauris velit, porta vitae porta vitae, ornare sed nulla. Nullam egestas lectus in tortor sagittis, in vehicula massa ultricies. Morbi eget pharetra quam, a rutrum diam. Morbi non quam nec erat eleifend euismod. Cras vehicula tincidunt aliquet. Suspendisse rutrum felis id purus tincidunt ullamcorper. Maecenas sed ornare nibh. Pellentesque dapibus nec eros nec consectetur. Suspendisse quam risus, vestibulum ac ipsum ac, semper volutpat erat. Aliquam erat volutpat.Duis ultrices nibh sed leo rutrum iaculis. Fusce ac sapien pretium, ultrices nunc a, aliquet ex. Aliquam id nibh eu enim ullamcorper feugiat. Etiam placerat, lacus quis dapibus ullamcorper, nisl ligula eleifend nunc, sit amet accumsan elit quam eget mi. Mauris interdum nisi nec lectus viverra, ac consectetur elit consequat. Mauris sed mauris sed nulla sodales maximus. Nunc ex nibh, faucibus a elementum vitae, egestas a dolor. Donec congue eu nunc ornare condimentum. Nulla bibendum sed diam porta tincidunt. Suspendisse potenti. Phasellus id eleifend leo, at efficitur mi. Donec maximus tellus nunc, a mollis urna malesuada sit amet. Nam sodales ipsum id rutrum malesuada. Phasellus maximus arcu sit amet luctus consectetur. Mauris ac arcu ante."
+          }
+        ]
+      }
+    ]
+  }
+}

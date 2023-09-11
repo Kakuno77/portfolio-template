@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style/blog.css" />
+  <link rel="stylesheet" href="/style/navbar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/new-boba" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+
+  <script src="/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+  <% const {blog, logo, blogs}=sections %>
+    <%- include('../components/navbar', {logo, blogs}) %>
+    <div class="blog">
+        <div class="content-container">
+          <% const content = blog.content  %>
+          <% const blocks = content.blocks  %>
+          <% for (const block of blocks) {%>
+            <% const _class = []%>
+            <% 
+              _class.push("block");
+              _class.push("row");
+            %>
+            <div class="<%= _class.join(' ') %>">
+            <% const elements = block.elements %>
+            <% for (const element of elements.sort((a,b) => a.sort - b.sort)) {%>
+              <% const customCss = element.customCss ? Object.entries(element.customCss).map(([k, v]) => `${k}:${v}`).join(';'): '';%>
+              <div style="<%- customCss %>">
+              <%switch (element.type) {
+                case 'image': %>
+                <img src="<%= element.src %>" width="<%= element.width %>px"/>
+                 <%break;
+                case 'text':%>
+                <span><%= element.content %></span>
+                <%   break;
+                default:
+                  break;
+              }%>
+            </div>
+
+<%              
+            } %>
+            </div>
+          <% } %>
+
+        </div>
+      </div>
+      <script>
+        document.querySelector('.menu-items').style.display = 'flex'
+        window.onload = function () {
+         
+        }
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "slug": "blog2",
+  "title": "blog2",
+  "content": {
+    "blocks": [
+      {
+        "direction": "row",
+        "elements": [
+          {
+            "type": "image",
+            "position": 2,
+            "src": "src"
+          },
+          {
+            "type": "text",
+            "position": 1
+
+          }
+        ]
+      }
+    ]
+  }
+}
