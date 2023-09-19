@@ -2,14 +2,45 @@
   "slug": "blog1",
   "title": "blog1",
   "content": {
+    "banner": {
+      "headline": "lorem ipsum dolor amet",
+      "image": {
+        "src": "https://fac.img.pmdstatic.net/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Ffac.2F2021.2F05.2F07.2Fa2bb5aa0-1605-47be-88e0-2cf9eff7141d.2Ejpeg/1200x1200/quality/80/crop-from/center/focus-point/4005%2C1199/thomas-pesquet-spationaute-astronaute-cosmonaute-que-faut-il-dire.jpeg",
+        "alt": ""
+      }
+    },
     "blocks": [
+      {
+        "customCss": {
+          "padding-bottom": "100px"
+        },
+        "direction": "row",
+        "elements": [
+          {
+            "type": "image",
+            "sort": 1,
+            "src": "https://fac.img.pmdstatic.net/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Ffac.2F2021.2F05.2F07.2Fa2bb5aa0-1605-47be-88e0-2cf9eff7141d.2Ejpeg/1200x1200/quality/80/crop-from/center/focus-point/4005%2C1199/thomas-pesquet-spationaute-astronaute-cosmonaute-que-faut-il-dire.jpeg",
+            "width": "500",
+            "customCss": {
+            }
+          },
+          {
+            "type": "text",
+            "sort": 2,
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium lectus eu tristique accumsan. Vestibulum posuere libero eu ligula blandit vestibulum. Mauris eu pulvinar sem. Etiam eget mattis enim. Ut tincidunt porta elit, ut elementum elit. Suspendisse dictum mattis libero, sit amet condimentum augue sagittis et. Nulla facilisi. Sed venenatis, leo eu ornare molestie, lacus ex fringilla enim, at fringilla libero nisi sit amet diam. Vivamus ac nibh ac dolor condimentum vehicula eget id nisl. Nam in sodales enim, sit amet egestas mi. Maecenas vulputate facilisis felis, in vulputate quam vehicula vel. Phasellus nec sapien in urna pulvinar fermentum. Ut vitae volutpat metus. Mauris quam felis, pellentesque nec efficitur non, sodales a turpis. Nulla fringilla arcu et magna varius dapibus. Suspendisse elementum lacus vel est laoreet aliquet.)...Ut vel volutpat lorem. Mauris eu mauris eget enim fermentum mollis. Duis at magna sem. Nam vulputate quam a volutpat laoreet. Cras congue eros a consequat molestie. Maecenas ac dictum tortor. Vivamus a ex purus...Cras eget augue gravida, auctor enim eget, placerat erat. Ut scelerisque blandit mi, a auctor neque vulputate quis. Aliquam rhoncus sem ut libero efficitur, et dictum mauris venenatis. Nunc suscipit nisl id laoreet luctus. Nunc sem nulla, pellentesque ut quam nec, dignissim congue nunc. Mauris nisi magna, laoreet nec dolor ut, fringilla placerat ipsum. Proin at odio velit. Duis a sem sed diam interdum vulputate. Nulla sed nibh sed velit faucibus tempus. Integer vitae justo diam. Nunc sit amet dapibus urna. Mauris vitae dapibus arcu, eget commodo nunc. Mauris fringilla ultrices nisl, at viverra ante venenatis non. Phasellus interdum sodales convallis. Ut ut nunc nibh. Vivamus eget tincidunt metus, vel interdum nunc...Nullam imperdiet volutpat tortor in fermentum. Phasellus tincidunt turpis eu ante fringilla blandit laoreet eget augue. Sed viverra felis sed faucibus feugiat. Praesent ligula eros, aliquam eu augue quis, malesuada malesuada lectus. Ut nec lacinia est. Mauris eleifend enim nisi, at porttitor ante bibendum quis. Integer venenatis, dui et malesuada cursus, ipsum ex laoreet augue, a congue elit arcu ut enim...Morbi in venenatis magna. Donec at justo pellentesque risus fringilla lacinia. Morbi auctor aliquet gravida. Morbi lacinia nulla sed ultricies faucibus. Mauris venenatis quis arcu vitae varius. Praesent ultrices libero gravida rutrum commodo. Mauris tincidunt magna id ornare interdum. Sed venenatis gravida porta.",
+            "customCss":  {
+              "padding-left": "50px"
+            }
+          }
+        ]
+      },
       {
         "direction": "row",
         "elements": [
           {
             "type": "image",
             "sort": 2,
-            "src": "https://media.gqmagazine.fr/photos/639ae5bcaa342b4423bab372/3:2/w_3594,h_2396,c_limit/MCDBAVV_EC017.jpg",
+            "src": "https://fac.img.pmdstatic.net/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Ffac.2F2021.2F05.2F07.2Fa2bb5aa0-1605-47be-88e0-2cf9eff7141d.2Ejpeg/1200x1200/quality/80/crop-from/center/focus-point/4005%2C1199/thomas-pesquet-spationaute-astronaute-cosmonaute-que-faut-il-dire.jpeg",
             "width": "500",
             "customCss": {
             }
@@ -17,7 +48,10 @@
           {
             "type": "text",
             "sort": 1,
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, gravida sit amet justo eget, efficitur eleifend magna. Praesent odio orci, varius a vestibulum eu, iaculis eget quam. In mauris velit, porta vitae porta vitae, ornare sed nulla. Nullam egestas lectus in tortor sagittis, in vehicula massa ultricies. Morbi eget pharetra quam, a rutrum diam. Morbi non quam nec erat eleifend euismod. Cras vehicula tincidunt aliquet. Suspendisse rutrum felis id purus tincidunt ullamcorper. Maecenas sed ornare nibh. Pellentesque dapibus nec eros nec consectetur. Suspendisse quam risus, vestibulum ac ipsum ac, semper volutpat erat. Aliquam erat volutpat.Duis ultrices nibh sed leo rutrum iaculis. Fusce ac sapien pretium, ultrices nunc a, aliquet ex. Aliquam id nibh eu enim ullamcorper feugiat. Etiam placerat, lacus quis dapibus ullamcorper, nisl ligula eleifend nunc, sit amet accumsan elit quam eget mi. Mauris interdum nisi nec lectus viverra, ac consectetur elit consequat. Mauris sed mauris sed nulla sodales maximus. Nunc ex nibh, faucibus a elementum vitae, egestas a dolor. Donec congue eu nunc ornare condimentum. Nulla bibendum sed diam porta tincidunt. Suspendisse potenti. Phasellus id eleifend leo, at efficitur mi. Donec maximus tellus nunc, a mollis urna malesuada sit amet. Nam sodales ipsum id rutrum malesuada. Phasellus maximus arcu sit amet luctus consectetur. Mauris ac arcu ante."
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium lectus eu tristique accumsan. Vestibulum posuere libero eu ligula blandit vestibulum. Mauris eu pulvinar sem. Etiam eget mattis enim. Ut tincidunt porta elit, ut elementum elit. Suspendisse dictum mattis libero, sit amet condimentum augue sagittis et. Nulla facilisi. Sed venenatis, leo eu ornare molestie, lacus ex fringilla enim, at fringilla libero nisi sit amet diam. Vivamus ac nibh ac dolor condimentum vehicula eget id nisl. Nam in sodales enim, sit amet egestas mi. Maecenas vulputate facilisis felis, in vulputate quam vehicula vel. Phasellus nec sapien in urna pulvinar fermentum. Ut vitae volutpat metus. Mauris quam felis, pellentesque nec efficitur non, sodales a turpis. Nulla fringilla arcu et magna varius dapibus. Suspendisse elementum lacus vel est laoreet aliquet.)...Ut vel volutpat lorem. Mauris eu mauris eget enim fermentum mollis. Duis at magna sem. Nam vulputate quam a volutpat laoreet. Cras congue eros a consequat molestie. Maecenas ac dictum tortor. Vivamus a ex purus...Cras eget augue gravida, auctor enim eget, placerat erat. Ut scelerisque blandit mi, a auctor neque vulputate quis. Aliquam rhoncus sem ut libero efficitur, et dictum mauris venenatis. Nunc suscipit nisl id laoreet luctus. Nunc sem nulla, pellentesque ut quam nec, dignissim congue nunc. Mauris nisi magna, laoreet nec dolor ut, fringilla placerat ipsum. Proin at odio velit. Duis a sem sed diam interdum vulputate. Nulla sed nibh sed velit faucibus tempus. Integer vitae justo diam. Nunc sit amet dapibus urna. Mauris vitae dapibus arcu, eget commodo nunc. Mauris fringilla ultrices nisl, at viverra ante venenatis non. Phasellus interdum sodales convallis. Ut ut nunc nibh. Vivamus eget tincidunt metus, vel interdum nunc...Nullam imperdiet volutpat tortor in fermentum. Phasellus tincidunt turpis eu ante fringilla blandit laoreet eget augue. Sed viverra felis sed faucibus feugiat. Praesent ligula eros, aliquam eu augue quis, malesuada malesuada lectus. Ut nec lacinia est. Mauris eleifend enim nisi, at porttitor ante bibendum quis. Integer venenatis, dui et malesuada cursus, ipsum ex laoreet augue, a congue elit arcu ut enim...Morbi in venenatis magna. Donec at justo pellentesque risus fringilla lacinia. Morbi auctor aliquet gravida. Morbi lacinia nulla sed ultricies faucibus. Mauris venenatis quis arcu vitae varius. Praesent ultrices libero gravida rutrum commodo. Mauris tincidunt magna id ornare interdum. Sed venenatis gravida porta.",
+            "customCss":  {
+              "padding-right": "50px"
+            }
           }
         ]
       }

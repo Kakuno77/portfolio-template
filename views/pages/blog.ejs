@@ -12,7 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/new-boba" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <script src="/js/jquery-3.7.1.min.js"></script>
 </head>
 
@@ -21,16 +23,31 @@
   <% const {blog, logo, blogs}=sections %>
     <%- include('../components/navbar', {logo, blogs}) %>
     <div class="blog">
+      <% const content = blog.content  %>
+      <% 
+        if (content.banner) {
+          const {headline, image } = content.banner;
+          const {src, alt} = image
+      %>
+          <div class="banner" >
+            <div class="headline">
+              <%= headline %>
+              </div>
+              <div class="image-placeholder" style="background-image: url(<%= src %>); background-repeat: no-repeat; background-size: cover"></div>
+            </div>
+      <%}%>
         <div class="content-container">
-          <% const content = blog.content  %>
+
           <% const blocks = content.blocks  %>
           <% for (const block of blocks) {%>
             <% const _class = []%>
             <% 
               _class.push("block");
-              _class.push("row");
+              _class.push(block.direction);
             %>
-            <div class="<%= _class.join(' ') %>">
+            <% const customCss = block.customCss ? Object.entries(block.customCss).map(([k, v]) => `${k}:${v}`).join(';'): '';%>
+
+            <div class="<%= _class.join(' ') %>" style="<%- customCss %>">
             <% const elements = block.elements %>
             <% for (const element of elements.sort((a,b) => a.sort - b.sort)) {%>
               <% const customCss = element.customCss ? Object.entries(element.customCss).map(([k, v]) => `${k}:${v}`).join(';'): '';%>
