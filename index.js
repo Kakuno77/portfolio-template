@@ -12,7 +12,10 @@ const picture = readDataFromJson('./json/resume/picture.json')
 
 const skills = readDataFromJson('./json/resume/skills.json')
 const logo = readDataFromJson('./json/resume/logo.json')
+const heading = readDataFromJson('./json/index/heading.json')
 const about = readDataFromJson('./json/index/about.json')
+const works = readDataFromJson('./json/index/where-i-work.json')
+
 const blogs = require('./json/blogs');
 
 const app = express();
@@ -21,16 +24,16 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use(express.static('public'));
 app.use(minifyHTML({
-    override: true,
-    exception_url: false,
-    htmlMinifier: {
-        removeComments: true,
-        collapseWhitespace: true,
-        collapseBooleanAttributes: true,
-        removeAttributeQuotes: true,
-        removeEmptyAttributes: true,
-        minifyJS: true
-    }
+  override: true,
+  exception_url: false,
+  htmlMinifier: {
+    removeComments: true,
+    collapseWhitespace: true,
+    collapseBooleanAttributes: true,
+    removeAttributeQuotes: true,
+    removeEmptyAttributes: true,
+    minifyJS: true
+  }
 }));
 
 dotenv.config();
@@ -40,9 +43,11 @@ app.get('/', function (_, res) {
   const sections = {
     profile_picture: profilePicture,
     logo,
+    heading,
     about,
     projects: projectsIndex,
-    blogs: Object.values(blogs)
+    blogs: Object.values(blogs),
+    works
 
   }
   console.log(sections)
@@ -81,5 +86,5 @@ app.get('/blog/:slug', function (req, res) {
 
 
 app.listen(PORT, function() {
-    console.log('url: http://localhost:'+PORT);
+  console.log('url: http://localhost:'+PORT);
 });

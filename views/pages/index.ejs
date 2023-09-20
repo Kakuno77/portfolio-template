@@ -19,15 +19,18 @@
 
 <body>
 
-  <% const {profile_picture, whoami, logo, about, projects}=sections %>
+  <% const {profile_picture, whoami, logo, heading, projects, about, works}=sections %>
     <%- include('../components/navbar', {logo}) %>
       <div class="index">
         <div class="heading-container">
-          <%- include('../components/index/picture', {profile_picture}) %>
-            <%- include('../components/index/heading', {about}) %>
+            <%- include('../components/index/heading', {heading}) %>
         </div>
         <div class="content-container">
-          <%- include('../components/index/projects', {projects}) %>
+         <!-- <%- include('../components/index/projects', {projects}) %>
+          -->
+          <%- include('../components/index/about', {about}) %>
+          <%- include('../components/index/where-i-work', {works}) %>
+
         </div>
 
       </div>
