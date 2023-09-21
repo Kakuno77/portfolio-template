@@ -18,9 +18,10 @@ body {
   animation-fill-mode: forwards;
   color: rgb(141, 141, 141);
 
+  margin: 0;
   &> div {
       max-width: 1200px;
-      margin: auto;
+      margin: 60px auto;
 
   }
 }
