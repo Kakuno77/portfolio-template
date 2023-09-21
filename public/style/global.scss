@@ -121,6 +121,7 @@ body {
       position: initial;
       justify-content: center;
       -webkit-writing-mode: horizontal-tb;
+      writing-mode: horizontal-rl;
       width: 100%;
       margin-top: 24px;
       &::after {
