@@ -44,7 +44,9 @@
       .about-sections {
         .about-section {
           margin-bottom: 100px;
-
+          h2 {
+            margin-bottom: 40px;
+          }
           .about-title {
 
             &::after {
@@ -72,6 +74,35 @@
 
     }
 
+    .whereIWork {
+      display: flex;
+      max-width: 700px;
+      .work-places {
+        margin-right: 40px;
+        .work-name {
+          margin-bottom: 20px;
+        }
+      }
+      .selected-work {
+        display: flex;
+        flex-direction: column;
+
+        .selected-work-job {
+          margin-bottom: 5px;
+
+          .selected-work-job-name {
+          }
+        }
+        .selected-work-dates {
+          margin-bottom: 20px;
+
+        }
+        .selected-work-bullet-points li{
+          margin-bottom: 10px;
+          list-style-type:square;
+        }
+      }
+    }
     .projects {
 
       .project-item {

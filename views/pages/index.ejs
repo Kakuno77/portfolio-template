@@ -71,6 +71,40 @@
           })
           scrollHandleParallax('.heading-container')
           scrollHandleParallax('.projects')
+          const updateDom = function() {
+            const workDescriptionDiv = document.querySelector('.selected-work')
+          console.log(workDescriptionDiv)
+          workDescriptionDiv.querySelector('.selected-work .selected-work-bullet-points').innerHTML = ''
+
+          const dataId = workDescriptionDiv.getAttribute('data-id')
+          const works = <%- JSON.stringify(works)  %>
+          const currentWork = JSON.parse(JSON.stringify(works.jobs[dataId]))
+
+          workDescriptionDiv.querySelector('.selected-work-job .selected-work-job-name').innerHTML = currentWork.job
+          workDescriptionDiv.querySelector('.selected-work-job .selected-work-job-place').innerHTML = ' @' + currentWork.place
+          workDescriptionDiv.querySelector('.selected-work .selected-work-dates').innerHTML = currentWork.date
+
+          for (const item of currentWork.items) {
+            const li = document.createElement('li')
+            li.innerText = item
+            li.onclick = function(e) {
+              console.log('click')
+            }
+            workDescriptionDiv.querySelector('.selected-work .selected-work-bullet-points').appendChild(li)
+
+          }
+          }
+
+
+          Array.from(document.querySelectorAll('.work-name')).forEach((a) => {
+            a.onclick = function(e) {
+              console.log(e.target.getAttribute('data-id'))
+              const workDescriptionDiv = document.querySelector('.selected-work')
+              workDescriptionDiv.setAttribute('data-id', e.target.getAttribute('data-id'))
+              updateDom()
+            }
+          });
+
         }
 
       </script>
