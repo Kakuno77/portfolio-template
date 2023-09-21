@@ -2,9 +2,62 @@
 
 
 .index {
+
+  .title {
+    margin-bottom: 40px;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 300px;
+      height: 1px;
+      background-color: black;
+      position: relative;
+      bottom: 10px;
+      left: 25px;
+    }
+  }
+  
   max-width: 1000px;
   margin: auto;
 
+  .medias-icons {
+    position: fixed;
+    bottom: 50px;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+      margin-bottom: 50px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px ;
+      height: 100px;
+      background-color: black;
+    }
+  }
+
+  .contact-side {
+    position: fixed;
+    top: 50px;
+    right: 5vw;
+    -webkit-writing-mode: vertical-rl;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px ;
+      height: 100px;
+      background-color: black;
+      margin-bottom: 30px;
+    }
+  }
   img {
     border-radius: 10px;
   }
@@ -24,6 +77,11 @@
 
       .portfolio-author {
         font-size: 50px;
+      }
+      .portfolio-author-description {
+        text-decoration: underline dashed;
+        font-size: 30px;
+        text-underline-offset: 5px;
       }
     }
   }
@@ -46,20 +104,9 @@
         .about-section {
           margin-bottom: 100px;
           h2 {
-            margin-bottom: 40px;
           }
           .about-title {
 
-            &::after {
-              content: '';
-              display: inline-block;
-              width: 300px;
-              height: 1px;
-              background-color: black;
-              position: relative;
-              bottom: 10px;
-              left: 25px;
-            }
           }
 
           .about-body {
@@ -74,10 +121,11 @@
 
 
     }
+  .whereIWork { 
+    max-width: 800px !important;
 
-    .whereIWork {
+    .whereIWork-content {
       display: flex;
-      max-width: 700px;
       .work-places {
         margin-right: 40px;
         .work-name {
@@ -104,6 +152,7 @@
         }
       }
     }
+  }
     .projects {
 
       .project-item {
@@ -156,41 +205,42 @@ nav {
   width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
   .heading-1 {
     font-size: 1.5em !important;
   }
 
-  .content-container {
-
-    .project-item {
-      flex-wrap: wrap;
+  .index  {
+    margin: 40px;
+    .medias-icons {
+      position: initial;
+      flex-direction: row;
       justify-content: center;
-      padding: 0 !important;
 
-      .project-item-description {
-        padding: 0px 50px 50px 50px !important;
+      i {
+        margin: 0 20px 0 20px;
       }
-
-      .project-item-picture {
-
-        width: 90vw !important;
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        
       }
+    }
 
+    .contact-side {
+      position: initial;
+      justify-content: center;
+      -webkit-writing-mode: horizontal-tb;
+      width: 100%;
+      margin-top: 24px;
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        
+      }
     }
   }
-
-  .heading-container {
-    flex-direction: column;
-
-    .side-picture {
-      margin: 0;
-    }
-
-    .heading-wrapper {
-      text-align: center;
-    }
-  }
-
 
 }

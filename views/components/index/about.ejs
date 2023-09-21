@@ -4,8 +4,8 @@
     <% for (let i = 0; i < about.sections.length; i++) { %>
       <% const section = about.sections[i]; %>
       <div class="about-section">
-      <h2 class="about-title">
-        0<%= i + 1 %>. <%- section.title %>
+      <h2 class="about-title bold title">
+        <span class="numbered">0<%= i + 1 %>.</span> <%- section.title %>
       </h2>
     <div class="about-body">
       <div class="about-content">

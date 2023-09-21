@@ -1,35 +1,37 @@
 <div class="whereIWork">
+  <h2 class="title bold"><span class="numbered">02. </span><%= works.slug %>
+  </h2>
+  <div class="whereIWork-content">
+    <div class="work-places">
+      <% for (let work of works.jobs) { %>
 
-  <div class="work-places">
-    <% for (let work of works.jobs) { %>
-
-      <!--  <div class="work-body">
+        <!--  <div class="work-body">
         <div class="work-job">
           
         </div>
       </div>
       -->
-      <div class="work-name" data-id="<%= works.jobs.indexOf(work) %>">
-        <%= work.job %>
+        <div class="work-name" data-id="<%= works.jobs.indexOf(work) %>">
+          <%= work.job %>
 
+        </div>
+        <% } %>
+    </div>
+    <div class="selected-work" data-id="0">
+
+      <div class="selected-work-job">
+        <span class="selected-work-job-name"></span>
+        <span class="selected-work-job-place"></span>
       </div>
-      <% } %>
-  </div>
-  <div class="selected-work" data-id="0">
 
-    <div class="selected-work-job">
-      <span class="selected-work-job-name"></span>
-      <span class="selected-work-job-place"></span>
+      <div class="selected-work-dates">
+      </div>
+
+      <div class="selected-work-bullet-points">
+      </div>
     </div>
+    <div>
 
-    <div class="selected-work-dates">
-    </div>
-
-    <div class="selected-work-bullet-points">
     </div>
   </div>
-  <div>
-
-  </div>
-
 </div>

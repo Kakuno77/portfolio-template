@@ -17,5 +17,14 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   margin: 0;
+  color: rgb(141, 141, 141);
+}
 
+.bold {
+  color:black;
+  font-weight: bolder;
+}
+
+.numbered {
+  color: hsl((250), 69%, 61%);
 }
