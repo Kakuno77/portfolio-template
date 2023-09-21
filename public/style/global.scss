@@ -16,8 +16,13 @@ body {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  margin: 0;
   color: rgb(141, 141, 141);
+
+  &> div {
+      max-width: 1200px;
+      margin: auto;
+
+  }
 }
 
 .bold {
@@ -27,4 +32,103 @@ body {
 
 .numbered {
   color: hsl((250), 69%, 61%);
+}
+
+.medias-icons {
+  position: fixed;
+  bottom: 50px;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  i {
+    margin-bottom: 50px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1px ;
+    height: 100px;
+    background-color: black;
+  }
+}
+
+.contact-side {
+  z-index: 2;
+  position: fixed;
+  top: 50px;
+  right: 5vw;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1px ;
+    height: 100px;
+    background-color: black;
+    margin-bottom: 30px;
+  }
+}
+
+.title {
+  margin-bottom: 40px;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 300px;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    bottom: 10px;
+    left: 25px;
+  }
+}
+
+.heading-1 {
+  font-size: 2em;
+}
+
+.heading-2 {
+  font-size: 1.7em;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .medias-icons {
+      position: initial;
+      flex-direction: row;
+      justify-content: center;
+
+      i {
+        margin: 0 20px 0 20px;
+      }
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        
+      }
+    }
+
+    .contact-side {
+      position: initial;
+      justify-content: center;
+      -webkit-writing-mode: horizontal-tb;
+      width: 100%;
+      margin-top: 24px;
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        
+      }
+    }
+  
 }

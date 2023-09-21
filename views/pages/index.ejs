@@ -41,47 +41,14 @@
       <script>
         window.onload = function () {
           document.querySelector('.menu-items').style.display = 'flex'
-          function checkVisible(elm, evalType) {
-            evalType = evalType || "visible";
+  
 
-            var vpH = $(window).height(), // Viewport Height
-              st = $(window).scrollTop(), // Scroll Top
-              y = elm.offset().top,
-              elementHeight = elm.height();
-
-            if (evalType === "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
-            if (evalType === "above") return ((y < (vpH + st)));
-          }
-          const scrollHandleParallax = function (parentElement) {
-
-            $(parentElement + ' > div').each((index, element) => {
-              //console.log($(document).scrollTop())
-
-              /*const documentScrollTop = $(document).scrollTop()
-              const elementScrollTop = (($(element).position().top) - ($(element).innerHeight() * 1.5))
-              console.log('document scrolltop: ' + documentScrollTop)
-              console.log('element scrolltop: ' + elementScrollTop)
-              console.log(window.innerHeight)*/
-              if (/*documentScrollTop >= elementScrollTop ||*/ checkVisible($(element)))
-                $(element).animate({
-                  'right': 0,
-                }, 1000)
-            });
-          }
-          $(document).on('scroll', function () {
-            scrollHandleParallax('.heading-container')
-            scrollHandleParallax('.projects')
-
-          })
-          scrollHandleParallax('.heading-container')
-          scrollHandleParallax('.projects')
           const updateDom = function() {
-            const workDescriptionDiv = document.querySelector('.selected-work')
-          console.log(workDescriptionDiv)
+          const workDescriptionDiv = document.querySelector('.selected-work')
           workDescriptionDiv.querySelector('.selected-work .selected-work-bullet-points').innerHTML = ''
 
           const dataId = workDescriptionDiv.getAttribute('data-id')
-          const works = <%- JSON.stringify(works)  %>
+          const works = <%- JSON.stringify(works)  %>;
           const currentWork = JSON.parse(JSON.stringify(works.jobs[dataId]))
 
           workDescriptionDiv.querySelector('.selected-work-job .selected-work-job-name').innerHTML = currentWork.job

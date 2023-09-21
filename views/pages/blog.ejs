@@ -16,6 +16,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <script src="/js/jquery-3.7.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,14 +32,17 @@
           const {src, alt} = image
       %>
           <div class="banner" >
-            <div class="headline">
-              <%= headline %>
-              </div>
               <div class="image-placeholder" style="background-image: url(<%= src %>); background-repeat: no-repeat; background-size: cover"></div>
             </div>
       <%}%>
         <div class="content-container">
-
+          <%if (content.banner) {
+          const {headline } = content.banner;
+      %>
+          <div class="heading-1 title bold" >
+            <%= headline %>
+            </div>
+      <%}%>
           <% const blocks = content.blocks  %>
           <% for (const block of blocks) {%>
             <% const _class = []%>
@@ -70,6 +75,8 @@
           <% } %>
 
         </div>
+        <%- include('../components/index/medias-icons') %>
+        <%- include('../components/index/contact-side') %>
       </div>
       <script>
         document.querySelector('.menu-items').style.display = 'flex'
