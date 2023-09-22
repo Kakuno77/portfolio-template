@@ -19,9 +19,9 @@
 
 <body>
 
-  <% const {picture, experiences, projects, skills, logo}=sections %>
+  <% const {picture, experiences, projects, skills, logo, authorInfos}=sections %>
     <%- include('../components/navbar', {logo}) %>
-      <div class="main">
+      <div class="resume">
         <div class="container">
 
           <%- include('../components/resume/picture', {picture}) %>
@@ -31,9 +31,9 @@
                   <%- include('../components/resume/skills', {skills}) %>
             </div>
         </div>
-        <%- include('../components/index/medias-icons') %>
-        <%- include('../components/index/contact-side') %>
       </div>
+      <%- include('../components/medias-icons', {authorInfos}) %>
+      <%- include('../components/contact-side', {authorInfos}) %>
       <script>
         window.onload = function () {
           document.querySelector('.menu-items').style.display = 'flex'

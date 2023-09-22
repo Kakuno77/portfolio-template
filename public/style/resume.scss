@@ -1,6 +1,6 @@
 @import 'global.scss';
 
-.main {
+.resume {
   .side-picture {
     margin: 100px 180px 0 0;
   }
@@ -118,7 +118,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .main {
+  .resume {
     .container {
       flex-wrap: wrap
     }

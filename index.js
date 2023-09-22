@@ -15,6 +15,7 @@ const logo = readDataFromJson('./json/resume/logo.json')
 const heading = readDataFromJson('./json/index/heading.json')
 const about = readDataFromJson('./json/index/about.json')
 const works = readDataFromJson('./json/index/where-i-work.json')
+const authorInfos = readDataFromJson('./json/author-infos.json')
 
 const blogs = require('./json/blogs');
 
@@ -47,7 +48,8 @@ app.get('/', function (_, res) {
     about,
     projects: projectsIndex,
     blogs: Object.values(blogs),
-    works
+    works,
+    authorInfos
 
   }
   console.log(sections)
@@ -61,7 +63,8 @@ app.get('/resume', function (_, res) {
     projects: projectsResume,
     skills,
     logo,
-    blogs: Object.values(blogs)
+    blogs: Object.values(blogs),
+    authorInfos
 
   }
   console.log(sections)
@@ -78,7 +81,8 @@ app.get('/blog/:slug', function (req, res) {
   const sections = {
     blog: blogs[slug],
     logo,
-    blogs: Object.values(blogs)
+    blogs: Object.values(blogs),
+    authorInfos
   }
   console.log(sections)
   res.render('pages/blog', { sections });

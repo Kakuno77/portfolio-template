@@ -1,5 +1,6 @@
 $horizontal-sep-color: lightgray;
 $main-font: 'Open Sans', sans-serif;
+$important-text-color: hsl(250, 69%, 61%);
 
 @keyframes fadeInAnimation {
   0% {
@@ -19,7 +20,7 @@ body {
   color: rgb(141, 141, 141);
 
   margin: 0;
-  &> div {
+  &> div:first-of-type {
       max-width: 1200px;
       margin: 60px auto;
 
@@ -27,12 +28,12 @@ body {
 }
 
 .bold {
-  color:black;
+  color: black;
   font-weight: bolder;
 }
 
 .numbered {
-  color: hsl((250), 69%, 61%);
+  color: $important-text-color;
 }
 
 .medias-icons {
@@ -42,14 +43,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  a {
+    color: inherit;
+    &:hover {
+      color: $important-text-color;
+    }
+
   i {
     margin-bottom: 50px;
+  }
   }
 
   &::after {
     content: '';
     display: block;
-    width: 1px ;
+    width: 1px;
     height: 100px;
     background-color: black;
   }
@@ -70,10 +79,18 @@ body {
   &::after {
     content: '';
     display: block;
-    width: 1px ;
+    width: 1px;
     height: 100px;
     background-color: black;
     margin-bottom: 30px;
+  }
+
+  .contact-email {
+    text-decoration: none !important;
+    color: inherit;
+    &:hover {
+      color: $important-text-color;
+    }
   }
 }
 
@@ -107,6 +124,7 @@ body {
       flex-direction: row;
       justify-content: center;
 
+      height: 20px;
       i {
         margin: 0 20px 0 20px;
       }
@@ -124,7 +142,7 @@ body {
       -webkit-writing-mode: horizontal-tb;
       writing-mode: horizontal-rl;
       width: 100%;
-      margin-top: 24px;
+      margin-bottom: 20px;
       &::after {
         content: '';
         width: 0;
