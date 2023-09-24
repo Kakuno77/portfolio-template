@@ -147,8 +147,13 @@ nav {
     font-size: 1.5em !important;
   }
 
-  .index {
+}
 
+@media screen and (max-width: 700px) {
+
+
+  .index {
+    margin: 60px 20px 60px 20px !important;
     .content-container {
       &>div {
         margin-bottom: 10px !important;
@@ -167,7 +172,6 @@ nav {
         }
       }
     }
-
     .whereIWork {
       .whereIWork-content {
         flex-wrap: wrap;
