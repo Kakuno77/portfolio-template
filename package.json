@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "sass-compile": "cd public/style && sass --watch .:.",
+    "sass-compile": "cd public/style && sass .:.",
+    "sass-watch": "cd public/style && sass --watch .:.",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,10 +16,10 @@
     "express": "^4.18.2",
     "express-minify-html": "^0.12.0",
     "nodemon": "^3.0.1",
-    "sass": "^1.66.1"
+    "sass": "^1.66.1",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
-    "dotenv": "^16.3.1",
     "eslint": "^8.49.0"
   }
 }

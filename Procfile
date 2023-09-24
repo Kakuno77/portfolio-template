@@ -1,0 +1,1 @@
+web: npm run sass-compile && npm start
