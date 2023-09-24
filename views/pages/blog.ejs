@@ -56,18 +56,24 @@
             <% const elements = block.elements %>
             <% for (const element of elements.sort((a,b) => a.sort - b.sort)) {%>
               <% const customCss = element.customCss ? Object.entries(element.customCss).map(([k, v]) => `${k}:${v}`).join(';'): '';%>
-              <div style="<%- customCss %>">
               <%switch (element.type) {
                 case 'image': %>
-                <img src="<%= element.src %>" width="<%= element.width %>px"/>
+                <div class="article-img" style="<%- customCss %>">
+
+                <img src="<%= element.src %>"/>
+              </div>
+
                  <%break;
                 case 'text':%>
+                <div class="article-text" style="<%- customCss %>">
+
                 <span><%= element.content %></span>
+              </div>
+
                 <%   break;
                 default:
                   break;
               }%>
-            </div>
 
 <%              
             } %>

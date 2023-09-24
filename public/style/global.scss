@@ -99,7 +99,7 @@ body {
   &::after {
     content: "";
     display: inline-block;
-    width: 300px;
+    width: 40%;
     height: 1px;
     background-color: black;
     position: relative;
@@ -117,7 +117,7 @@ body {
 }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1440px) {
 
     .medias-icons {
       position: initial;

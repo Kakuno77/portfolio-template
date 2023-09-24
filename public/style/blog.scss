@@ -5,6 +5,15 @@
   margin-top: 60px;
   .block {
     display: flex;
+    padding-bottom: 100px;
+
+      .article-img {
+        img {
+          width: 100%;
+          min-width: 500px;
+        }
+      }
+    
   }
 
   .row {
@@ -38,7 +47,7 @@ nav {
   width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .content-container {
     padding:  0 50px 0 50px !important;
   .block {
@@ -48,6 +57,12 @@ nav {
       margin: 10px auto !important;
       padding: 0 !important;
     }
+        .article-img {
+          img {
+            min-width: 0px;
+            max-width: 500px;
+          }
+        }
   }
 }
   
