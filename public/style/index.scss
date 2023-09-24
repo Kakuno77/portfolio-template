@@ -147,4 +147,45 @@ nav {
     font-size: 1.5em !important;
   }
 
+  .index {
+
+    .content-container {
+      &>div {
+        margin-bottom: 10px !important;
+
+      }
+
+      .about {
+
+        .about-body {
+          flex-wrap: wrap-reverse;
+          justify-content: center;
+
+          .about-content {
+            padding: 20px 0 0 0 !important;
+          }
+        }
+      }
+    }
+
+    .whereIWork {
+      .whereIWork-content {
+        flex-wrap: wrap;
+        .work-places {
+          margin-right: 0 !important;
+
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          .work-name{
+            margin: 0 20px 0 0 !important;
+            
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
 }

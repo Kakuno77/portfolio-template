@@ -27,6 +27,13 @@ body {
   }
 }
 
+.underline {
+  text-decoration: underline;
+  text-decoration-color: $important-text-color;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 .bold {
   color: black;
   font-weight: bolder;
@@ -119,6 +126,11 @@ body {
 
 @media screen and (max-width: 1440px) {
 
+  body {
+    & > div:first-of-type {
+      margin: 50px;
+    }
+  }
     .medias-icons {
       position: initial;
       flex-direction: row;

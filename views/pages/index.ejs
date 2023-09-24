@@ -62,14 +62,19 @@
             workDescriptionDiv.querySelector('.selected-work .selected-work-bullet-points').appendChild(li)
 
           }
+          Array.from(document.getElementsByClassName('work-name')).forEach((e) => {
+                e.classList.remove('underline')
+              })
+              document.getElementsByClassName('work-name')[dataId].classList.add('underline')
+              
           }
 
           updateDom()
           Array.from(document.querySelectorAll('.work-name')).forEach((a) => {
             a.onclick = function(e) {
-              console.log(e.target.getAttribute('data-id'))
+              const dataId = e.target.getAttribute('data-id')
               const workDescriptionDiv = document.querySelector('.selected-work')
-              workDescriptionDiv.setAttribute('data-id', e.target.getAttribute('data-id'))
+              workDescriptionDiv.setAttribute('data-id', dataId)
               updateDom()
             }
           });
