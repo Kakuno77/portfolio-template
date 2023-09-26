@@ -3,7 +3,7 @@
   "sections": [
     {
       "title": "About Me",
-      "content": "Hello! My name is Rathesh and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</br></br>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</br></br>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</br>",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in enim sit amet urna pellentesque bibendum id a leo. In malesuada dolor nec aliquam accumsan. Proin vel vestibulum erat. In purus felis, ornare ac condimentum non, pulvinar vitae ligula. Vivamus diam magna, rhoncus iaculis libero eget, suscipit pretium dui. Nam nec odio tellus. Quisque id dui condimentum, tincidunt justo sed, faucibus tellus. Fusce porttitor ipsum vitae enim molestie vehicula. Donec tempor orci tincidunt ante faucibus vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas mattis aliquet metus id semper. Donec tincidunt sem non consequat varius. Donec in metus dapibus, consequat erat ac, fringilla purus. Aliquam rhoncus enim eget urna tincidunt, vitae pharetra est faucibus.",
       "portrait": {
         "img": {
           "src": "https://i1.sndcdn.com/artworks-0zVNmjrykpxFyPvz-RCs79A-t500x500.jpg",
