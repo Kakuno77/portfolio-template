@@ -1,9 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  <% const {blog, logo, blogs, authorInfos }=sections %>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bienvenue sur le blog de Rathesh Charles intitulé '<%= blog.content.banner.headline %>'">
+
   <title>Document</title>
   <link rel="stylesheet" href="/style/blog.css" />
   <link rel="stylesheet" href="/style/navbar.css" />
@@ -22,7 +26,6 @@
 
 <body>
 
-  <% const {blog, logo, blogs, authorInfos }=sections %>
     <%- include('../components/navbar', {logo, blogs}) %>
     <div class="blog">
       <% const content = blog.content  %>
