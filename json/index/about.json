@@ -1,9 +1,9 @@
 {
-  "slug": "About Me",
+  "slug": "A propos de moi",
   "sections": [
     {
-      "title": "About Me",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in enim sit amet urna pellentesque bibendum id a leo. In malesuada dolor nec aliquam accumsan. Proin vel vestibulum erat. In purus felis, ornare ac condimentum non, pulvinar vitae ligula. Vivamus diam magna, rhoncus iaculis libero eget, suscipit pretium dui. Nam nec odio tellus. Quisque id dui condimentum, tincidunt justo sed, faucibus tellus. Fusce porttitor ipsum vitae enim molestie vehicula. Donec tempor orci tincidunt ante faucibus vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas mattis aliquet metus id semper. Donec tincidunt sem non consequat varius. Donec in metus dapibus, consequat erat ac, fringilla purus. Aliquam rhoncus enim eget urna tincidunt, vitae pharetra est faucibus.",
+      "title": "À propos de moi",
+      "content": "Dès mon jeune âge, je travaille en faisant des projets personnels. Le but de ces projets n’était pas de sortir un ou plusieurs concepts révolutionnaires, mais de me construire professionnellement. Je devais me construire un chemin dans le monde vaste de l’informatique, qui peut être effrayant aux premiers abords, compte tenu de l’évolution de ce dernier qui est fulgurant. Pour construire ce chemin, il aura fallu que j’apprenne des choses ! L’accès au savoir est une des plus belles choses qui existe, et l’avantage du secteur de l’informatique, c’est clairement le nombre infini de ressources pédagogique présentes sur Internet. Je suis donc passé par la création de petits sites web/logiciels simples et épuré, à des logiciels au fonctionnement complexe.",
       "portrait": {
         "img": {
           "src": "https://i1.sndcdn.com/artworks-0zVNmjrykpxFyPvz-RCs79A-t500x500.jpg",

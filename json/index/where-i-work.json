@@ -1,24 +1,15 @@
 {
-  "slug": "Là où je travaille",
+  "slug": "Mon travail",
   "jobs": [
     {
-      "job": "Developpeur Back-end",
+      "job": "Développeur Back-end",
       "place": "Xo7",
-      "date": "2018 - aujourd'hui",
+      "date": "2021 - aujourd'hui",
       "items": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus, velit vel suscipit euismod, lacus metus cursus enim, at egestas diam nunc at arcu. Donec eu ultrices sapien. Ut elementum.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus, velit vel suscipit euismod, lacus metus cursus enim, at egestas diam nunc at arcu. Donec eu ultrices sapien. Ut elementum.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus, velit vel suscipit euismod, lacus metus cursus enim, at egestas diam nunc at arcu. Donec eu ultrices sapien. Ut elementum.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus, velit vel suscipit euismod, lacus metus cursus enim, at egestas diam nunc at arcu. Donec eu ultrices sapien. Ut elementum."
+        "Aide à l'évolution et la maintenance du produit Galaxy utilisé par la société multi-nationale <b>Amadeus</b>",
+        "Migration de la codebase vers sa dernière version du site web de crowdfunding dans l'immobilier <b>Upstone</b>",
+        "Maintenance et évolution de la solution CIRIOS pour la société <b>PNO Consultants</b>"
       ]
-    },
-    {
-      "job": "Developpeur front-end",
-      "place": "Xo7",
-      "date": "2018 - aujourd'hui",
-      "items": [
-        "test"
-    ]
     }
   ]
 }

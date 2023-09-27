@@ -29,11 +29,10 @@
             <%- include('../components/index/heading', {heading}) %>
         </div>
         <div class="content-container">
-         <!-- <%- include('../components/index/projects', {projects}) %>
-          -->
           <%- include('../components/index/about', {about}) %>
           <%- include('../components/index/where-i-work', {works}) %>
-
+          <%- include('../components/index/projects', {projects}) %>
+          
         </div>
       </div>
       <%- include('../components/medias-icons', {authorInfos}) %>
@@ -57,7 +56,7 @@
 
           for (const item of currentWork.items) {
             const li = document.createElement('li')
-            li.innerText = item
+            li.innerHTML = item
             li.onclick = function(e) {
               console.log('click')
             }

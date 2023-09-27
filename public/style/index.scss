@@ -22,6 +22,7 @@
 
       .portfolio-author {
         font-size: 50px;
+        color: $secondary-text-color;
       }
       .portfolio-author-description {
         text-decoration: underline dashed;
@@ -38,7 +39,7 @@
     &>div {
       max-width: 900px;
       margin: auto;
-      margin-bottom: 100px !important;
+      margin-bottom: 200px !important;
     }
 
     .about {
@@ -47,7 +48,6 @@
 
       .about-sections {
         .about-section {
-          margin-bottom: 100px;
           h2 {
           }
           .about-title {
@@ -99,32 +99,36 @@
     }
   }
     .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(293px, 1fr));
 
+      grid-gap: 10px;
       .project-item {
-        &:last-child {
-          padding: 0 !important;
-        }
-
-        position: relative;
-        right: 100vw;
-        padding: 0px 25px 25px 0;
+        
         display: flex;
+        flex-direction: column;
+        .project-header {
+          display: flex;
+          justify-content: flex-end;
+          & > * {
+            margin: 0 10px 0 0;
+
+          }
+        }
+        border: 1px solid silver;
+        border-radius: 5px;
+        padding: 2rem 1.75rem;
+
 
         .project-item-description {
-          padding: 0px 0 0 100px;
-          display: flex;
-          flex-direction: column;
-
+    
+          font-size: 14px;
           .text {
-            max-width: 1024px;
           }
         }
 
         .project-item-picture {
-          width: 650px;
-          height: 550px;
-          background-position: center;
-          background-repeat: no-repeat;
+ 
         }
 
       }

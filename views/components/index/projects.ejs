@@ -1,10 +1,22 @@
-<div class="projects">
-  <% for (const project of projects.items) { %>
-    <div class="project-item">
 
-      <div class="project-item-picture" style="background-image: url('<%= project.picture.src %>');"></div>
+<div class="projects-wrapper">
+  <h2 class="title bold"><span class="numbered">03. </span><%= projects.slug %></h2>
+  <div class="projects">
+  <% for (let i = 0; i < projects.items.length; i++) { %>
+    <% const project = projects.items[i];  %>
+    <div class="project-item" >
+
+      <div class="project-header">
+        <% if (project.github) {%>
+        <a href="<%= project.github %>"><i class="fa-brands fa-github fa-lg"></i> </a>
+     <% }%>
+     <% if (project.demo) {%>
+      <a href="<%= project.demo %>"><i class="fa fa-external-link fa-lg"></i> </a>
+   <% }%>
+      </div>
+      
       <div class="project-item-description">
-        <p class="heading-2">
+        <p class="heading-3">
           <%- project.name %>
         </p>
         <p class="text">

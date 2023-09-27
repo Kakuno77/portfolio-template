@@ -1,6 +1,6 @@
 $horizontal-sep-color: lightgray;
 $main-font: 'Open Sans', sans-serif;
-$important-text-color: hsl(250, 69%, 61%);
+$secondary-text-color: #215682;
 
 @keyframes fadeInAnimation {
   0% {
@@ -28,7 +28,7 @@ body {
 }
 
 .underline {
-  border-bottom: 2px solid hsl(250, 69%, 61%);
+  border-bottom: 2px solid $secondary-text-color;
   padding-bottom: 3px;
 }
 
@@ -38,7 +38,15 @@ body {
 }
 
 .numbered {
-  color: $important-text-color;
+  color: $secondary-text-color;
+}
+
+
+a {
+  color: inherit;
+  &:hover {
+    color: $secondary-text-color;
+  }
 }
 
 .medias-icons {
@@ -49,15 +57,8 @@ body {
   flex-direction: column;
   align-items: center;
 
-  a {
-    color: inherit;
-    &:hover {
-      color: $important-text-color;
-    }
-
   i {
     margin-bottom: 50px;
-  }
   }
 
   &::after {
@@ -94,7 +95,7 @@ body {
     text-decoration: none !important;
     color: inherit;
     &:hover {
-      color: $important-text-color;
+      color: $secondary-text-color;
     }
   }
 }
@@ -121,6 +122,9 @@ body {
   font-size: 1.7em;
 }
 
+.heading-3 {
+  font-size: 1.3em;
+}
 
 @media screen and (max-width: 1440px) {
 
