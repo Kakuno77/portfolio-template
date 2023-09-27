@@ -1,6 +1,6 @@
 $horizontal-sep-color: lightgray;
 $main-font: 'Open Sans', sans-serif;
-$secondary-text-color: #215682;
+$secondary-text-color:hsl(250, 69%, 61%);
 
 @keyframes fadeInAnimation {
   0% {
@@ -56,6 +56,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
 
   i {
     margin-bottom: 50px;

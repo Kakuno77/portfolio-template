@@ -22,7 +22,6 @@
 
       .portfolio-author {
         font-size: 50px;
-        color: $secondary-text-color;
       }
       .portfolio-author-description {
         text-decoration: underline dashed;
@@ -39,9 +38,12 @@
     &>div {
       max-width: 900px;
       margin: auto;
-      margin-bottom: 200px !important;
     }
 
+    &>div:not(:last-child) {
+
+      margin-bottom: 200px !important;
+    }
     .about {
       display: flex;
       flex-direction: column;
@@ -100,23 +102,40 @@
   }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(293px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
 
-      grid-gap: 10px;
+      grid-gap: 15px;
       .project-item {
         
+        cursor: pointer;
         display: flex;
         flex-direction: column;
-        .project-header {
+        justify-content: space-between;
+        .project-header{
+
+          .project-links {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            & > *:not(:last-child) {
+              margin: 0 15px 0 0;
+  
+            }
+          }
+
+
+        }
+        .project-footer {
           display: flex;
-          justify-content: flex-end;
+          justify-content: flex-start;
           & > * {
-            margin: 0 10px 0 0;
+            margin: 0 20px 0 0;
 
           }
         }
         border: 1px solid silver;
-        border-radius: 5px;
+        border-radius: 4px;
         padding: 2rem 1.75rem;
 
 
