@@ -79,6 +79,15 @@
               updateDom()
             }
           });
+          $('.project-item').on('mouseenter', function() {
+            $(this).animate({
+              bottom: '10px'
+            });
+          }).on('mouseleave', function() {
+              $(this).animate({
+                bottom: '0'
+              });
+          })
 
         }
 
