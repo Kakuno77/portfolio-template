@@ -15,6 +15,9 @@
     
   }
 
+  .block:not(:last-child) {
+    margin-bottom: 50px;
+  }
   .row {
     flex-direction: row;
   }

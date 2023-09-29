@@ -128,11 +128,11 @@
 
         }
         .project-footer {
+          
           display: flex;
-          justify-content: flex-start;
-          & > * {
-            margin: 0 20px 0 0;
-
+          flex-wrap: wrap;
+          & > *:not(:last-child) {
+            padding: 0 8px 0 0 ;
           }
         }
         border: 1px solid silver;
