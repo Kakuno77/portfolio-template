@@ -1,0 +1,59 @@
+{
+  "slug": "competences_techniques",
+  "title": "Compétences techniques",
+  "content": {
+    "banner": {
+      "headline": "lorem ipsum dolor amet",
+      "image": {
+        "src": "https://img.20mn.fr/v_1Vx1b2TuqIouErEePLAg/768x492_astronaute-john-young-salue-drapeau-americain-sol-lune-lors-mission-apollo-16-1972",
+        "alt": ""
+      }
+    },
+    "blocks": [
+      {
+        "title": "Développer un site web",
+        "customCss": {
+        },
+        "direction": "row",
+        "elements": [
+          {
+            "type": "image",
+            "sort": 1,
+            "src": "https://fac.img.pmdstatic.net/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Ffac.2F2021.2F05.2F07.2Fa2bb5aa0-1605-47be-88e0-2cf9eff7141d.2Ejpeg/1200x1200/quality/80/crop-from/center/focus-point/4005%2C1199/thomas-pesquet-spationaute-astronaute-cosmonaute-que-faut-il-dire.jpeg",
+            "customCss": {
+            }
+          },
+          {
+            "type": "text",
+            "sort": 2,
+            "content": "Le développement web a pris une place importante dans notre société. En effet, depuis les débuts d’internet, les technologies numériques n’ont cessé de croitre. D’énormes progrès ont été effectué, et encore aujourd’hui les technologies évoluent à une vitesse exponentielle. Ces technologies sont utilisées constamment au quotidien dans le monde entier. Que ce soit sur les smartphones ou sur les ordinateurs, les sites web sont partout, car ils sont conçus et adapté pour un maximum de supports utilisateurs. De plus, les sites web constituent un véritable business. Ces derniers permettent à de nombreuses sociétés de développer leurs activités, que ce soit dans la production, la vente et la communication.Aujourd’hui, de nombreux entrepreneurs se lance dans la création d’une entreprise. Prenons comme exemple un jeune diplômé sortant d’école qui souhaite lancer un business dans la vente de vêtements. Il va d’abord trouver des personnes avec qui s’associer pour lancer cette activité, puis chaque associé va proposer ses idées. Tous ensemble ils vont construire leur identité. Ensuite, pour rendre le projet public, ils vont avoir besoin d’une certaine présence numérique. Ça peut se faire via les réseaux sociaux, ou via un site web, comme le font de nombreuses grandes entreprises ! C’est pourquoi cette compétence a une place importante au sein de l’entreprise. Utilisé à bon escient, elle pourrait grandement participer à l’accroissement du chiffre d’affaires d’une entreprise. Certaines activités requièrent d’avoir une forte emprunte numérique afin de faire monter les chiffres, et le web est une solution très efficace pour cela.",
+            "customCss":  {
+              "margin-left": "50px"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Quelques situations concrètes",
+        "direction": "row",
+        "elements": [
+          {
+            "type": "image",
+            "sort": 2,
+            "src": "https://www.cieletespace.fr/media/default/0001/18/LUNE_rockfall3_1200-5d5d.jpeg",
+            "customCss": {
+            }
+          },
+          {
+            "type": "text",
+            "sort": 1,
+            "content": "Dans le cadre de mon alternance, j’ai eu l’occasion de travailler sur plusieurs projets web.-\t Un « CMS » permettant de générer des site web (Wordpress), destiné à une entreprise multinationale (business b2b). -\tUne plateforme web de comptabilité pour entreprises.-\tUne plateforme de crowdfunding immobilière développé par un ancien employé. Le code source étant assez vieux, j’ai eu à migrer une bonne partie de cette dernière afin de la rendre plus maintenable.Mon regard critique sur mon niveau d’expertiseLe domaine du web évolue constamment, et malgré mon apprentissage continue, j’ai encore tant de choses à apprendre. De plus, il est très facile d’écrire du code sale, mais concevoir un site web très bien structuré doté d’une architecture facilitant son maintien et son évolution, c’est tout un autre niveau d’expertise. Aujourd’hui, je ne me considère pas être un pur car cela demande énormément d’expérience. C’est ce qui va différencier le bon développeur du mauvais développeur lors des entretiens techniques.  D’ailleurs, il est assez facile d’identifier le bon développeur et le mauvais lors d’un entretien. Le bon développeur va plus loin qu’écrire du code. Il sait être créatif, va tenter d’imaginer les meilleures solutions, et se questionnera sur ses propres choix, tandis que le mauvais développeur va apporter une solution sans la questionner et la remettre en question. Enfin, un développeur se doit d’être doté d’une très bonne logique et être capable de résoudre des problèmes. Il existe deux catégories de développeurs aujourd’hui. Il y a les développeurs spécialisés dans une technologie spécifique, et les développeurs polyvalents. Mon objectif personnel est d’être un développeur polyvalent. J’aimerai pouvoir m’adapter dans n’importe quel environnement, peu importe les langages de programmation imposés et faire face à tout type de problème. Je travaille cela chaque jour, et selon moi ce serait à la fois une satisfaction et un accomplissement personnel.",
+            "customCss":  {
+              "margin-right": "50px"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

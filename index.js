@@ -73,7 +73,7 @@ app.get('/resume', function (_, res) {
 
 app.get('/blog/:slug', function (req, res) {
   const {slug} = req.params
-  if (!blogs[slug]) {
+  if (!Object.values(blogs).find(b => b.slug === slug)) {
     res.status(404)
     res.send('NOT FOUND')
     return

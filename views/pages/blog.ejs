@@ -6,9 +6,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bienvenue sur le blog de Rathesh Charles intitulé '<%= blog.content.banner.headline %>'">
+  <meta name="description" content="Bienvenue sur le blog de Rathesh Charles intitulé '<%= blog.title %>'">
 
-  <title><%= blog.content.banner.headline %></title>
+  <title><%= blog.title %></title>
   <link rel="stylesheet" href="/style/blog.css" />
   <link rel="stylesheet" href="/style/navbar.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
       <% const content = blog.content  %>
       <% 
         if (content.banner) {
-          const {headline, image } = content.banner;
+          const { image } = content.banner;
           const {src, alt} = image
       %>
           <div class="banner" >
@@ -39,15 +39,11 @@
             </div>
       <%}%>
         <div class="content-container">
-          <%if (content.banner) {
-          const {headline } = content.banner;
-      %>
-          <div class="heading-1 title bold" >
-            <%= headline %>
-            </div>
-      <%}%>
           <% const blocks = content.blocks  %>
           <% for (const block of blocks) {%>
+            <div class="heading-1 title bold" >
+            <%= block.title %>
+            </div>
             <% const _class = []%>
             <% 
               _class.push("block");
