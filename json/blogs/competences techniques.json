@@ -5,7 +5,7 @@
     "banner": {
       "headline": "lorem ipsum dolor amet",
       "image": {
-        "src": "https://img.20mn.fr/v_1Vx1b2TuqIouErEePLAg/768x492_astronaute-john-young-salue-drapeau-americain-sol-lune-lors-mission-apollo-16-1972",
+        "src": "https://voila-le-travail.fr/wp-content/uploads/2022/07/Comment-monter-en-compe%CC%81tences-dans-son-travail.png",
         "alt": ""
       }
     },
@@ -19,7 +19,7 @@
           {
             "type": "image",
             "sort": 1,
-            "src": "https://fac.img.pmdstatic.net/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Ffac.2F2021.2F05.2F07.2Fa2bb5aa0-1605-47be-88e0-2cf9eff7141d.2Ejpeg/1200x1200/quality/80/crop-from/center/focus-point/4005%2C1199/thomas-pesquet-spationaute-astronaute-cosmonaute-que-faut-il-dire.jpeg",
+            "src": "https://clic-competences.fr/wp-content/uploads/2023/03/competences-freelance.jpeg",
             "customCss": {
             }
           },
@@ -37,13 +37,7 @@
         "title": "Quelques situations concrètes",
         "direction": "row",
         "elements": [
-          {
-            "type": "image",
-            "sort": 2,
-            "src": "https://www.cieletespace.fr/media/default/0001/18/LUNE_rockfall3_1200-5d5d.jpeg",
-            "customCss": {
-            }
-          },
+   
           {
             "type": "text",
             "sort": 1,
