@@ -3,50 +3,80 @@
   "items": [
     {
       "name": "ASIILE, INTECH Paris",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare feugiat tortor nec facilisis. Aliquam erat volutpat.",
+      "description": "Un site web de planification de projets en tout genre.",
       "picture": {
         "src": "https://bigthink.com/wp-content/uploads/2022/01/https___blogs-images.forbes.com_startswithabang_files_2017_02_Buzz-and-Solar-Wind-Experiment.jpg"
       },
       "github": "dzd",
       "technologies": [
-        "HTML",
-        "CSS"
+        {"label": "Vue", "color": "lightgreen"},
+        {"label": "PostgreSql", "color": "darkblue"},
+        {"label": "Kubernetes", "color": "blue"}
       ]
     },
     {
-      "name": "Tok'eat, INTECH Paris",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare feugiat tortor nec facilisis. Aliquam erat volutpat.",
+      "name": "Kuberneteche",
+      "description": "Un logiciel de clusterisation de conteneurs applicatifs. ",
       "picture": {
         "src": "https://media.npr.org/assets/img/2019/07/12/04-7278_wide-821a0b38d9823096d48b6504eebae761d19ced60-s1400-c100.jpg"
       },
       "github": "dzd",
       "technologies": [
-        "HTML",
-        "CSS"
+        {"label": "Golang", "color": "cyan"},
+        {"label": "Shell", "color": "green"}
       ]
     },
     {
-      "name": "Featness, IUT d'Orsay",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare feugiat tortor nec facilisis. Aliquam erat volutpat.",
+      "name": "Twitteche",
+      "description": "Un réseau social grandement inspiré de Twitter.",
       "picture": {
         "src": "https://singularityhub.com/wp-content/uploads/2020/04/as11-40-5873_orig-NASA-Artemis-moon-space.jpg"
       },
       "technologies": [
-        "HTML",
-        "CSS"
+        {"label": "React", "color": "lightblue"},
+        {"label": "Sass", "color": "pink"}
       ]
     },
     {
-      "name": "Interpréteur de code en ligne, IUT d'Orsay",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare feugiat tortor nec facilisis. Aliquam erat volutpat.",
+      "name": "Route planner",
+      "description": "Un site web proposant des itinéraires optimaux pour se déplacer d'une station de transport en commun vers une autre.",
       "picture": {
         "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
       },
       "github": "dzd",
       "demo": "dd",
       "technologies": [
-        "HTML",
-        "CSS"
+        {"label": "HTML", "color": "rgb(203, 203, 1)"},
+        {"label": "CSS", "color": "rgb(203, 203, 1)"},
+        {"label": "Javascript", "color": "rgb(203, 203, 1)"}
+      ]
+    },
+    {
+      "name": "Boogle",
+      "description": "Un navigateur web",
+      "picture": {
+        "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
+      },
+      "github": "dzd",
+      "demo": "dd",
+      "technologies": [
+        {"label": "C++", "color": "rgb(203, 203, 1)"},
+        {"label": "Qt framework", "color": "lightgreen"},
+        {"label": "Javascript", "color": "rgb(203, 203, 1)"}
+      ]
+    },
+    {
+      "name": "CScript",
+      "description": "Un compilateur permettant de convertir un langage maison en Javascript",
+      "picture": {
+        "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
+      },
+      "github": "dzd",
+      "demo": "dd",
+      "technologies": [
+        {"label": "C++", "color": "rgb(203, 203, 1)"},
+        {"label": "Qt framework", "color": "lightgreen"},
+        {"label": "Javascript", "color": "rgb(203, 203, 1)"}
       ]
     }
   ]

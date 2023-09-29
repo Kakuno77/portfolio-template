@@ -129,11 +129,18 @@
         }
         .project-footer {
           
+          font-size: 12px;
           display: flex;
           flex-wrap: wrap;
-          & > *:not(:last-child) {
-            padding: 0 8px 0 0 ;
+          & > * {
+            margin: 4px ;
+            padding: 4px 8px 4px 8px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 20px;
+            filter: brightness(90%);
           }
+         
         }
         border: 1px solid silver;
         border-radius: 4px;

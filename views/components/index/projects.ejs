@@ -18,7 +18,7 @@
                     <% }%>
             </div>
             <div class="project-item-description">
-              <p class="heading-3">
+              <p class="heading-3 bold">
                 <%- project.name %>
               </p>
               <p class="text">
@@ -29,10 +29,10 @@
           </div>
 
 
-          <div class="project-footer">
+          <div class="project-footer bold">
             <% for (const tech of project.technologies) {%>
-              <div>
-                <%= tech %>
+              <div style="color:<%=tech.color%>; border-color: <%=tech.color%>">
+                <span><%= tech.label %></span>
               </div>
               <% }%>
 
