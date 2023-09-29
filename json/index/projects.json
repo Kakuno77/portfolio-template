@@ -46,8 +46,8 @@
       "github": "dzd",
       "demo": "dd",
       "technologies": [
-        {"label": "HTML", "color": "rgb(203, 203, 1)"},
-        {"label": "CSS", "color": "rgb(203, 203, 1)"},
+        {"label": "HTML", "color": "red"},
+        {"label": "CSS", "color": "purple"},
         {"label": "Javascript", "color": "rgb(203, 203, 1)"}
       ]
     },
@@ -60,7 +60,7 @@
       "github": "dzd",
       "demo": "dd",
       "technologies": [
-        {"label": "C++", "color": "rgb(203, 203, 1)"},
+        {"label": "C++", "color": "pink"},
         {"label": "Qt framework", "color": "lightgreen"},
         {"label": "Javascript", "color": "rgb(203, 203, 1)"}
       ]
@@ -74,9 +74,8 @@
       "github": "dzd",
       "demo": "dd",
       "technologies": [
-        {"label": "C++", "color": "rgb(203, 203, 1)"},
-        {"label": "Qt framework", "color": "lightgreen"},
-        {"label": "Javascript", "color": "rgb(203, 203, 1)"}
+        {"label": "C", "color": "grey"},
+        {"label": "Makefile", "color": "green"}
       ]
     }
   ]
