@@ -1,6 +1,14 @@
-(function( $ ){
-  
-  $.fn.textAnimation = function( animation_speed, text_speed, animation ){
+var winFocused = true;
+
+window.onfocus = function () {
+  winFocused = true;
+}
+window.onblur = function () {
+  winFocused = false;
+};
+
+(function ($) {
+  $.fn.textAnimation = function(animation_speed, text_speed, animation) {
     var text, i = 0;
     var $this = $(this);
     
@@ -23,10 +31,12 @@ var i = 1;
 
 $('.bounce_in_animation').textAnimation(250, 50, 'bounceIn');
 
-setInterval(function(){
+setInterval(function () {
+  if (!winFocused)
+    return
   i %= 4;
   $('.bounce_in_animation').html(temp);
-  switch(i) {
+  switch (i) {
     case 0:
       $('.bounce_in_animation').textAnimation(250, 50, 'bounceIn');
       break;
@@ -38,6 +48,6 @@ setInterval(function(){
       break;
     default:
       $('.bounce_in_animation').textAnimation(250, 50, 'spinIn');
-          }
+  }
   i++;
 }, 1000 + 150 * temp.length + 250)
