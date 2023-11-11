@@ -2,21 +2,10 @@ $horizontal-sep-color: lightgray;
 $main-font: 'Open Sans', sans-serif;
 $secondary-text-color:hsl(250, 69%, 61%);
 
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
 
-  100% {
-    opacity: 1;
-  }
-}
 
 body {
   font-family: $main-font;
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
   color: rgb(141, 141, 141);
 
   margin: 0;
