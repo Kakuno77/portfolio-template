@@ -11,7 +11,7 @@ const profilePicture = readDataFromJson('./json/index/profile-picture.json')
 const picture = readDataFromJson('./json/resume/picture.json')
 
 const skills = readDataFromJson('./json/resume/skills.json')
-const logo = readDataFromJson('./json/resume/logo.json')
+const logo = readDataFromJson('./json/logo.json')
 const heading = readDataFromJson('./json/index/heading.json')
 const about = readDataFromJson('./json/index/about.json')
 const works = readDataFromJson('./json/index/where-i-work.json')
