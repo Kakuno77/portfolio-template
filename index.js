@@ -81,10 +81,10 @@ app.get('/blog/:slug', function (req, res) {
   const sections = {
     blog: blogs[slug],
     logo,
+    selected_article: 'index' in req.query && req.query.index > -1 && req.query.index < Object.values(blogs).length  ? req.query.index : 0,
     blogs: Object.values(blogs),
     authorInfos
   }
-  console.log(sections)
   res.render('pages/blog', { sections });
 });
 

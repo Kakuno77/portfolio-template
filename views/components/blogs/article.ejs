@@ -1,0 +1,49 @@
+<div class="article">
+  <% 
+  if (article.banner) {
+    const { image } = article.banner;
+    const {src, alt} = image
+%>
+    <div class="banner" >
+        <div class="image-placeholder" style="background-image: url(<%= src %>); background-repeat: no-repeat; background-size: cover; background-position:center"></div>
+      </div>
+      <%}%>
+
+    <div class="heading-1 title bold" >
+    <%= article.title %>
+    </div>
+    <% const _class = []%>
+    <% 
+      _class.push("block");
+      _class.push(article.direction);
+    %>
+    <% const customCss = article.customCss ? Object.entries(article.customCss).map(([k, v]) => `${k}:${v}`).join(';'): '';%>
+
+    <div class="<%= _class.join(' ') %>" style="<%- customCss %>">
+    <% const elements = article.elements %>
+    <% for (const element of elements.sort((a,b) => a.sort - b.sort)) {%>
+      <% const customCss = element.customCss ? Object.entries(element.customCss).map(([k, v]) => `${k}:${v}`).join(';'): '';%>
+      <%switch (element.type) {
+        case 'image': %>
+        <div class="article-img" style="<%- customCss %>">
+
+        <img src="<%= element.src %>"/>
+      </div>
+
+         <%break;
+        case 'text':%>
+        <div class="article-text" style="<%- customCss %>">
+
+        <span><%- element.content %></span>
+      </div>
+
+        <%   break;
+        default:
+          break;
+      }%>
+
+<%              
+    } %>
+    </div>
+
+</div>

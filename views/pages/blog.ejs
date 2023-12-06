@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <% const {blog, logo, blogs, authorInfos }=sections %>
+  <% const {blog, logo, blogs, authorInfos, selected_article }=sections %>
 
 <head>
   <meta charset="UTF-8">
@@ -29,56 +29,20 @@
     <%- include('../components/navbar', {logo, blogs}) %>
     <div class="blog">
       <% const content = blog.content  %>
-      <% 
-        if (content.banner) {
-          const { image } = content.banner;
-          const {src, alt} = image
-      %>
-          <div class="banner" >
-              <div class="image-placeholder" style="background-image: url(<%= src %>); background-repeat: no-repeat; background-size: cover"></div>
-            </div>
-      <%}%>
+
         <div class="content-container">
-          <% const blocks = content.blocks  %>
-          <% for (const block of blocks) {%>
-            <div class="heading-1 title bold" >
-            <%= block.title %>
+          <div class="selected-article">
+            <%- include('../components/blogs/article.ejs', {'article': content.articles[selected_article]}) %>
+
+          </div>
+          <div class="suggested-articles">
+            <% let items = content.articles.slice(0, selected_article).concat(content.articles.slice(selected_article+1));  %>
+            <% for (const item of items) { %>
+              <a href="?index=<%= content.articles.indexOf(item); %>">
+              <%- include('../components/blogs/preview.ejs', {'article': item}) %>
+            </a>
+              <% }%>
             </div>
-            <% const _class = []%>
-            <% 
-              _class.push("block");
-              _class.push(block.direction);
-            %>
-            <% const customCss = block.customCss ? Object.entries(block.customCss).map(([k, v]) => `${k}:${v}`).join(';'): '';%>
-
-            <div class="<%= _class.join(' ') %>" style="<%- customCss %>">
-            <% const elements = block.elements %>
-            <% for (const element of elements.sort((a,b) => a.sort - b.sort)) {%>
-              <% const customCss = element.customCss ? Object.entries(element.customCss).map(([k, v]) => `${k}:${v}`).join(';'): '';%>
-              <%switch (element.type) {
-                case 'image': %>
-                <div class="article-img" style="<%- customCss %>">
-
-                <img src="<%= element.src %>"/>
-              </div>
-
-                 <%break;
-                case 'text':%>
-                <div class="article-text" style="<%- customCss %>">
-
-                <span><%= element.content %></span>
-              </div>
-
-                <%   break;
-                default:
-                  break;
-              }%>
-
-<%              
-            } %>
-            </div>
-          <% } %>
-
         </div>
       </div>
       <%- include('../components/medias-icons', {authorInfos}) %>

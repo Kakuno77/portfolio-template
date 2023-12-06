@@ -1,23 +1,25 @@
 @import 'global.scss';
 
 .blog {
-
   margin-top: 60px;
+  max-width: 1400px !important;
+
   .block {
     display: flex;
 
-      .article-img {
-        img {
-          width: 100%;
-          min-width: 500px;
-        }
+    .article-img {
+      img {
+        width: 100%;
+        min-width: 500px;
       }
-    
+    }
+
   }
 
   .block:not(:last-child) {
     margin-bottom: 50px;
   }
+
   .row {
     flex-direction: row;
   }
@@ -27,8 +29,27 @@
   }
 
   .content-container {
+    display: flex;
+
+    justify-content: space-between;
+
+    .selected-article {}
+
+    .suggested-articles {
+      &>* {
+        margin-bottom: 80px;
+      }
+
+      margin-left: 70px;
+
+      .banner {
+        margin: 0;
+        height: 300px;
+        width: 300px;
+      }
+    }
   }
- 
+
   .banner {
 
     width: 100%;
@@ -49,23 +70,83 @@ nav {
   width: 100%;
 }
 
-@media screen and (max-width: 1440px) {
-  .content-container {
-    padding:  0 !important;
-  .block {
-    flex-direction: column !important;
+@media screen and (max-width: 1670px) {
+  .medias-icons {
+    position: initial;
+    flex-direction: row;
+    justify-content: center;
 
-    div {
-      margin: 10px auto !important;
-      padding: 0 !important;
+    height: 20px;
+
+    i {
+      margin: 0 20px 0 20px;
     }
-        .article-img {
-          img {
-            min-width: 0px;
-            max-width: 500px;
-          }
-        }
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+
+    }
+  }
+
+
+  .contact-side {
+    position: initial;
+    justify-content: center;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-rl;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+
+    }
   }
 }
-  
+
+@media screen and (max-width: 1100px) {
+  .content-container {
+    flex-wrap: wrap;
+
+    padding: 0 !important;
+
+    .suggested-articles {
+      width: 100%;
+      margin: 0 !important;
+      margin-top: 100px !important;
+      .preview-article {
+        width: 500px;
+        margin: auto;
+
+        &> * {
+          text-align: center;
+        }
+          .banner {
+            width: 100%;
+
+          }
+        }
+      
+    }
+    .block {
+      flex-direction: column !important;
+
+      div {
+        margin: 10px auto !important;
+        padding: 0 !important;
+      }
+
+      .article-img {
+        img {
+          min-width: 0px;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+
 }

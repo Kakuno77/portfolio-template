@@ -1,0 +1,15 @@
+<div class="preview-article">
+  <%
+  if (article.banner) {
+    const { image } = article.banner;
+    const {src, alt} = image
+%>
+    <div class="banner" >
+        <div class="image-placeholder" style="background-image: url(<%= src %>); background-repeat: no-repeat; background-size: cover; background-position:center"></div>
+      </div>
+      <%}%>
+
+      <h3>
+    <%= article.title %>
+    </h3>
+</div>
