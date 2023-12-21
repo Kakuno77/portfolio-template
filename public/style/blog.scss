@@ -33,7 +33,13 @@
 
     justify-content: space-between;
 
-    .selected-article {}
+    .selected-article {
+
+      .blog-img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
 
     .suggested-articles {
       &>* {
