@@ -35,10 +35,17 @@
 
     .selected-article {
 
-      .blog-img {
+      .blog-img-wrapper {
+
         margin: 0 auto;
         display: block;
-      }
+        overflow-y: auto;
+        .blog-img {
+          position: relative;
+          width: 100%;
+          height: inherit;
+        }
+    }
     }
 
     .suggested-articles {
@@ -119,13 +126,19 @@ nav {
     flex-wrap: wrap;
 
     padding: 0 !important;
+    .selected-article {
 
+      .blog-img-wrapper {
+
+        max-width: 400px;
+      }
+    }
     .suggested-articles {
       width: 100%;
       margin: 0 !important;
       margin-top: 100px !important;
       .preview-article {
-        width: 500px;
+        width: 100%;
         margin: auto;
 
         &> * {
