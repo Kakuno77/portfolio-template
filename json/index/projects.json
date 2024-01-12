@@ -7,7 +7,7 @@
       "picture": {
         "src": "https://bigthink.com/wp-content/uploads/2022/01/https___blogs-images.forbes.com_startswithabang_files_2017_02_Buzz-and-Solar-Wind-Experiment.jpg"
       },
-      "github": "dzd",
+      "github": "https://gitlab.esiea.fr/intech/projets/2021m/s05-il/alphatask",
       "technologies": [
         {"label": "Vue", "color": "lightgreen"},
         {"label": "PostgreSql", "color": "darkblue"},
@@ -20,7 +20,7 @@
       "picture": {
         "src": "https://media.npr.org/assets/img/2019/07/12/04-7278_wide-821a0b38d9823096d48b6504eebae761d19ced60-s1400-c100.jpg"
       },
-      "github": "dzd",
+      "github": "https://github.com/rathesh77/Docker-containers-manager",
       "technologies": [
         {"label": "Golang", "color": "cyan"},
         {"label": "Shell", "color": "green"}
@@ -32,6 +32,8 @@
       "picture": {
         "src": "https://singularityhub.com/wp-content/uploads/2020/04/as11-40-5873_orig-NASA-Artemis-moon-space.jpg"
       },
+      "github":"https://github.com/rathesh77/twitter-clone",
+      "github2":"https://github.com/rathesh77/twitter-clone-backend",
       "technologies": [
         {"label": "React", "color": "lightblue"},
         {"label": "Sass", "color": "pink"}
@@ -43,8 +45,7 @@
       "picture": {
         "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
       },
-      "github": "dzd",
-      "demo": "dd",
+      "github": "https://github.com/rathesh77/Route-planner",
       "technologies": [
         {"label": "HTML", "color": "red"},
         {"label": "CSS", "color": "purple"},
@@ -57,8 +58,7 @@
       "picture": {
         "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
       },
-      "github": "dzd",
-      "demo": "dd",
+      "github": "https://github.com/rathesh77/WebBrowser",
       "technologies": [
         {"label": "C++", "color": "pink"},
         {"label": "Qt framework", "color": "lightgreen"},
@@ -71,8 +71,7 @@
       "picture": {
         "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
       },
-      "github": "dzd",
-      "demo": "dd",
+      "github": "https://github.com/rathesh77/CCompiler",
       "technologies": [
         {"label": "C", "color": "grey"},
         {"label": "Makefile", "color": "green"}
