@@ -1,9 +1,9 @@
 {
-  "slug": "A propos de moi",
+  "slug": "Qui suis-je ?",
   "sections": [
     {
-      "title": "À propos de moi",
-      "content": "Dès mon jeune âge, je travaille en faisant des projets personnels. Le but de ces projets n’était pas de sortir un ou plusieurs concepts révolutionnaires, mais de me construire professionnellement. Je devais me construire un chemin dans le monde vaste de l’informatique, qui peut être effrayant aux premiers abords, compte tenu de l’évolution de ce dernier qui est fulgurant. Pour construire ce chemin, il aura fallu que j’apprenne des choses ! L’accès au savoir est une des plus belles choses qui existe, et l’avantage du secteur de l’informatique, c’est clairement le nombre infini de ressources pédagogique présentes sur Internet. Je suis donc passé par la création de petits sites web/logiciels simples et épuré, à des logiciels au fonctionnement complexe.",
+      "title": "Qui suis-je ?",
+      "content": "À 17 ans, je commence à m'initier à l'informatique sous les conseils avisés de mon grand frère, qui suivait des études d'ingénieur. Je me lance rapidement dans la création de projets personnels en développant des sites web très simples et minimalistes. Le but de ces projets n'était pas de révolutionner le monde de l'internet, mais plutôt de développer des compétences. Je devais me tracer un chemin dans le vaste monde de l'informatique, qui peut sembler effrayant au premier abord, compte tenu de son évolution fulgurante. Pour construire ce chemin, il m'a fallu enchaîner des centaines et des milliers d'heures de formation en autodidacte ! L'accès au savoir est l'une des plus belles choses qui existent, et l'avantage du secteur de l'informatique réside dans le nombre infini de ressources pédagogiques présentes sur le web. Ainsi, je suis passé de la création de petits sites web/logiciels simples et épurés à des logiciels au fonctionnement complexe. Chaque progrès réalisé me motivait progressivement. Aujourd'hui, je peux dire fièrement que j'arrive à exercer un métier qui me passionnait et me faisait rêver depuis mon jeune âge.",
       "portrait": {
         "img": {
           "src": "https://img.freepik.com/vecteurs-premium/photo-profil-avatar-homme-illustration-vectorielle_268834-538.jpg",

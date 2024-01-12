@@ -7,13 +7,21 @@
         "Maintenance et evolution d'un CMS multi-sites",
         "Migration de la codebase du site web de crowdfunding dans l'immobilier Upstone"
       ],
-      "years": "2020-2024"
+      "years": "2022-2024"
     },
     {
       "name": "ESIEA - Ecole d'ingenieur du numérique",
       "list": [
         "Master 5 en ingénierie du logiciel",
         "Titre RNCP niveau 8"
+      ],
+      "years": "2020-2024"
+    },
+    {
+      "name": "IUT d'Orsay",
+      "list": [
+        "DUT Informatique",
+        "Niveau BAC+2"
       ],
       "years": "2020-2024"
     }
