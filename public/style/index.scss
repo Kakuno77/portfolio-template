@@ -183,13 +183,7 @@ nav {
 }
 
 @media screen and (max-width: 700px) {
-
-
   .index {
-    .portfolio-author {
-      font-size: 30px !important;
-      height: 50px !important;
-    }
     .content-container {
       &>div {
         margin-bottom: 10px !important;
@@ -227,5 +221,12 @@ nav {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .portfolio-author {
+    font-size: 30px !important;
+    height: 50px !important;
   }
 }
