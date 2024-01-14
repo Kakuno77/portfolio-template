@@ -64,6 +64,23 @@
             .about-content {
               padding: 0 50px 0 0;
             }
+            .about-portrait {
+              transition: margin-top 0.2s ease-in-out;
+              &:hover {
+                margin-top: -20px;
+              }
+              img {
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+                transition: filter 0.2s  ease-in-out;
+
+                &:hover {
+                  filter: grayscale(0%);
+                  -webkit-filter: grayscale(0%);
+                }
+              }
+            }
+
           }
         }
       }
