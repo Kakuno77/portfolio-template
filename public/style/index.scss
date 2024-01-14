@@ -216,6 +216,20 @@ nav {
           .about-content {
             padding: 20px 0 0 0 !important;
           }
+          .about-portrait {
+            &:hover {
+              margin-top: 0px !important;
+            }
+            img {
+              filter: grayscale(0%) !important;
+              -webkit-filter: grayscale(0%) !important;
+        
+              &:hover {
+                filter: grayscale(0%) !important;
+                -webkit-filter: grayscale(0%) !important;
+              }
+            }
+          }
         }
       }
     }
