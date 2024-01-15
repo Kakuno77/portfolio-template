@@ -4,7 +4,7 @@
     {
       "name": "ASIILE, INTECH Paris",
       "list": [
-        "Site web de réservation de restaurants en ligne",
+        "Site web de planification de projets en tout genre",
         "Mise en place d'un tableau de bord permettant d'assigner et catégoriser des tâches au sein d'un projet",
         "Développement de l'infrastructure frontend, backend et mise en place d'une CI/CD afin d'automatiser la création des tests unitaires et le deploiement de l'application sur une architecture Kubernetes",
         "Équipe de 3 développeurs et un responsable d'architecture kubernetes"
