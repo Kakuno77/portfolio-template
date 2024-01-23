@@ -1,5 +1,5 @@
 {
-  "slug": "Mes competences transverses",
+  "slug": "Mes compétences transverses",
   "title": "Compétences transverses",
   "content": {
     "articles": [
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "title": "Capacité à resoudre des problèmes",
+        "title": "Capacité à résoudre des problèmes",
         "customCss": {},
         "direction": "row",
         "banner": {
-          "headline": "Capacité à resoudre des problèmes",
+          "headline": "Capacité à résoudre des problèmes",
           "image": {
             "src": "/img/article-thinking.webp",
             "alt": ""
@@ -37,7 +37,7 @@
         "elements": [
           {
             "type": "text",
-            "content": "<p>Avant d'entamer ma première expérience au sein de l'entreprise Xo7, j'ai consacré un temps considérable à affiner ma capacité à résoudre des problèmes complexes. Mon terrain d'entraînement de prédilection était le site web Codewars, une plateforme offrant une multitude de défis algorithmiques couvrant divers domaines tels que les mathématiques, la cryptographie et les structures de données. Cette préparation intensive a rapidement porté ses fruits lorsque j'ai fait mes premiers pas chez Xo7, où j'ai su m'adapter rapidement au langage PHP ainsi que l'utilisation de Git et de commandes Linux sur des machines virtuelles fonctionnant sous Debian.</p><p>Pour anecdote, j'ai eu un ticket contenant de longues spécifications, à résoudre. Il a fallu que je décompose le problème en sous-problèmes et en résolvant chaque sous-problème pour trouver une solution finale. On appelle également cette méthode \"diviser pour régner\", méthode que j'ai pu expérimenter dans un problème mathématique de calcul de matrices auquel j'ai fait face, sur le site Codewars. Pour résoudre ce problème, j'ai implémenté un algorithme en suivant cette méthode. Souvent, les développeurs ne se rendent pas compte qu'ils utilisent cette méthode au quotidien lorsqu'ils sont confrontés à des problèmes complexes ou longs à resoudre.</p><p>En informatique, \"diviser pour régner\" est une technique algorithmique consistant à :\n<ol><li>Diviser : découper un problème initial en sous-problèmes</li>\n<li>Régner : résoudre les sous-problèmes (récursivement ou directement s'ils sont assez petits)</li>\n<li>Combiner : calculer une solution au problème initial à partir des solutions des sous-problèmes.</li></ol></p><p>Mon approche originale face à chaque problème a été remarquée, ce qui m'a valu des éloges pour ma perspicacité.</p><p>En conséquence, on m'a rapidement confié la responsabilité de travailler de manière autonome sur deux produits numériques distincts, chacun dédié à un client spécifique. Cette évolution rapide vers des missions plus indépendantes a été une validation tangible de ma capacité à résoudre des problèmes de manière efficace et créative. J'ai très vite compris que cette habitude à confronter le cerveau à des problèmes difficiles entraîne l'esprit à résoudre des défis complexes, chose qui est indispensable pour un developpeur.</p>",
+            "content": "<p>Avant d'entamer ma première expérience au sein de l'entreprise Xo7, j'ai consacré un temps considérable à affiner ma capacité à résoudre des problèmes complexes. Mon terrain d'entraînement de prédilection était le site web Codewars, une plateforme offrant une multitude de défis algorithmiques couvrant divers domaines tels que les mathématiques, la cryptographie et les structures de données. Cette préparation intensive a rapidement porté ses fruits lorsque j'ai fait mes premiers pas chez Xo7, où j'ai su m'adapter rapidement au langage PHP ainsi que l'utilisation de Git et de commandes Linux sur des machines virtuelles fonctionnant sous Debian.</p><p>Pour anecdote, j'ai eu un ticket contenant de longues spécifications, à résoudre. Il a fallu que je décompose le problème en sous-problèmes et en résolvant chaque sous-problème pour trouver une solution finale. On appelle également cette méthode \"diviser pour régner\", méthode que j'ai pu expérimenter dans un problème mathématique de calcul de matrices auquel j'ai fait face, sur le site Codewars. Pour résoudre ce problème, j'ai implémenté un algorithme en suivant cette méthode. Souvent, les développeurs ne se rendent pas compte qu'ils utilisent cette méthode au quotidien lorsqu'ils sont confrontés à des problèmes complexes ou longs à résoudre.</p><p>En informatique, \"diviser pour régner\" est une technique algorithmique consistant à :\n<ol><li>Diviser : découper un problème initial en sous-problèmes</li>\n<li>Régner : résoudre les sous-problèmes (récursivement ou directement s'ils sont assez petits)</li>\n<li>Combiner : calculer une solution au problème initial à partir des solutions des sous-problèmes.</li></ol></p><p>Mon approche originale face à chaque problème a été remarquée, ce qui m'a valu des éloges pour ma perspicacité.</p><p>En conséquence, on m'a rapidement confié la responsabilité de travailler de manière autonome sur deux produits numériques distincts, chacun dédié à un client spécifique. Cette évolution rapide vers des missions plus indépendantes a été une validation tangible de ma capacité à résoudre des problèmes de manière efficace et créative. J'ai très vite compris que cette habitude à confronter le cerveau à des problèmes difficiles entraîne l'esprit à résoudre des défis complexes, chose qui est indispensable pour un développeur.</p>",
             "customCss": {
             }
           }
