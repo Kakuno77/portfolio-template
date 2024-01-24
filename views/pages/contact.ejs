@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<% const {logo, blogs, authorInfos }=sections %>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de contact">
+
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/style/blog.css" />
+    <link rel="stylesheet" href="/style/navbar.css" />
+    <link rel="stylesheet" href="/style/contact.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/new-boba" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <%- include('../components/navbar', {logo, blogs}) %>
+      <div class="contact">
+
+        <form action="/form-sent">
+          <h1>Des questions ? Contacte-moi ici !</h1>
+          <label for="fname">Prénom</label>
+          <input type="text" id="fname" name="firstname" placeholder="Jean">
+
+          <label for="lname">Nom</label>
+          <input type="text" id="lname" name="lastname" placeholder="Dupont">
+
+          <label for="phone">Numéro de téléphone</label>
+          <input type="text" id="phone" name="phone" placeholder="0606060606">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="..." style="height:200px"></textarea>
+
+          <input type="submit" value="Envoyer">
+        </form>
+
+      </div>
+      <%- include('../components/medias-icons', {authorInfos}) %>
+        <%- include('../components/contact-side', {authorInfos}) %>
+
+          <script>
+
+            async function postData(url = "", data = {}) {
+              // Default options are marked with *
+              const response = await fetch(url, {
+                method: "POST", // *GET, POST, PUT, DELETE, etc.
+                mode: "cors", // no-cors, *cors, same-origin
+                cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+                credentials: "same-origin", // include, *same-origin, omit
+                headers: {
+                  "Content-Type": "application/json",
+                  // 'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                redirect: "follow", // manual, *follow, error
+                referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                body: JSON.stringify(data), // body data type must match "Content-Type" header
+              });
+              return response.json(); // parses JSON response into native JavaScript objects
+            }
+            document.querySelector('form').addEventListener('submit', function (ev) {
+              ev.preventDefault()
+              const firstname = ev.target.firstname.value
+              const lastname = ev.target.lastname.value
+              const phone = ev.target.phone.value
+              const message = ev.target.message.value
+
+              postData('/form-sent', { firstname, lastname, phone, message }).then((data) => {
+                console.log(data); // JSON data parsed by `data.json()` call
+                document.querySelector('form').innerHTML = '<h2>Votre message a été envoyé</h2>'
+              });
+            })
+
+
+          </script>
+  </body>
+
+</html>

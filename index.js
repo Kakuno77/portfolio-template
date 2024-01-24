@@ -1,6 +1,7 @@
 const express = require('express');
 const minifyHTML = require('express-minify-html');
 const dotenv = require('dotenv')
+const bodyParser = require('body-parser')
 
 const { readDataFromJson } = require('./helpers/json/dataReader')
 const experiences = readDataFromJson('./json/resume/experiences.json')
@@ -20,6 +21,7 @@ const authorInfos = readDataFromJson('./json/author-infos.json')
 const blogs = require('./json/blogs');
 
 const app = express();
+const fs = require('fs')
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -35,6 +37,11 @@ app.use(minifyHTML({
     removeEmptyAttributes: true,
     minifyJS: true
   }
+}));
+app.use(bodyParser.json())
+
+app.use(bodyParser.urlencoded({
+  extended: true
 }));
 
 dotenv.config();
@@ -54,6 +61,48 @@ app.get('/', function (_, res) {
   }
   console.log(sections)
   res.render('pages/index', { sections });
+});
+
+app.get('/contact', function (_, res) {
+  const sections = {
+    logo,
+    authorInfos,
+    blogs: Object.values(blogs),
+
+  }
+  console.log(sections)
+  res.render('pages/contact', { sections });
+});
+
+app.post('/form-sent', function (req, res) {
+
+  console.log(req.body)
+  const forms = require('./forms.json');
+
+  const {firstname, lastname, phone, message} = req.body
+  forms.push({firstname, lastname, phone, message})
+  fs.writeFileSync("./forms.json", JSON.stringify(forms))
+  res.json('ok')
+});
+
+app.get('/forms', function (req, res) {
+  const sections = {
+    logo,
+    authorInfos,
+    blogs: Object.values(blogs),
+  }
+
+  res.render('pages/forms', { sections });
+});
+
+app.post('/forms', function (req, res) {
+
+  if (req.body.password && req.body.password === process.env['PASSWORD']) {
+    res.json(require('./forms.json'))
+  } else {
+    res.status(400)
+    res.json([])
+  }
 });
 
 app.get('/resume', function (_, res) {
