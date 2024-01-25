@@ -81,7 +81,7 @@
 
               postData('/form-sent', { firstname, lastname, phone, message }).then((data) => {
                 console.log(data); // JSON data parsed by `data.json()` call
-                document.querySelector('form').innerHTML = '<h2>Votre message a été envoyé</h2>'
+                document.querySelector('form').innerHTML = '<h1>Votre message a été envoyé</h1>'
               });
             })
 
