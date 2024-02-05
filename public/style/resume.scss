@@ -24,27 +24,6 @@
       padding: 0;
     }
   }
-  img:hover {
-    animation-name: float;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-
-    animation-timing-function: ease-in-out
-  }
-
-  @keyframes float {
-    0% {
-      transform: translatey(0px);
-    }
-
-    50% {
-      transform: translatey(-10px);
-    }
-
-    100% {
-      transform: translatey(0px);
-    }
-  }
 
   .content-container {
     display: flex;
