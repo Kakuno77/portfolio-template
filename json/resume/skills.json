@@ -7,7 +7,8 @@
         "C",
         "C++",
         "Java",
-        "Python"
+        "Python",
+        "Script shell"
       ]
     },
     {
@@ -15,7 +16,6 @@
       "items": [
         "HTML",
         "CSS",
-        "PHP",
         "Javascript",
         "MySQL",
         "PostgresSql",
@@ -37,13 +37,18 @@
       "items": [
         "Docker",
         "Github/Gitlab",
-        "Kubernetes"
+        "Gitlab CI",
+        "Kubernetes",
+        "Terraform",
+        "Prometheus",
+        "ELK stack"
       ]
     },
     {
       "name": "Méthodologies",
       "items": [
         "Agile",
+        "DevOps",
         "Scrum"
       ]
     }

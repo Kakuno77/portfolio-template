@@ -2,10 +2,10 @@
   "title": "Mes experiences",
   "items": [
     {
-      "name": "Xo7, développeur backend",
+      "name": "Eridanis, ingénieur DevOps",
       "list": [
-        "Maintenance et evolution d'un CMS multi-sites",
-        "Migration de la codebase du site web de crowdfunding dans l'immobilier Upstone"
+        "A CHANGER",
+        "A CHANGER"
       ],
       "years": "2022-2024"
     },
@@ -18,12 +18,12 @@
       "years": "2020-2024"
     },
     {
-      "name": "IUT d'Orsay",
+      "name": "ESIEA - Ecole d'ingenieur du numérique",
       "list": [
-        "DUT Informatique",
+        "Cycle préparatoire intégrée",
         "Niveau BAC+2"
       ],
-      "years": "2020-2024"
+      "years": "2018-2020"
     }
   ]
 }
