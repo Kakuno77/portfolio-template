@@ -2,67 +2,37 @@
   "slug": "Quelques projets",
   "items": [
     {
-      "name": "ASIILE, INTECH Paris",
-      "description": "Un site web de planification de projets en tout genre.",
+      "name": "Journey Down the Den, INTECH Paris",
+      "description": "Un jeu vidéo de type RPG en tour par tour.",
       "picture": {
-        "src": "https://bigthink.com/wp-content/uploads/2022/01/https___blogs-images.forbes.com_startswithabang_files_2017_02_Buzz-and-Solar-Wind-Experiment.jpg"
+        "src": "https://github.com/darkgugu/JourneyDownTheDen/blob/main/Fiche%20Projet/logo%20JDTD.png"
       },
-      "github": "https://gitlab.esiea.fr/intech/projets/2021m/s05-il/alphatask",
+      "github": "https://github.com/darkgugu/JourneyDownTheDen",
       "technologies": [
-        {"label": "Vue", "color": "lightgreen"},
-        {"label": "PostgreSql", "color": "darkblue"},
-        {"label": "Kubernetes", "color": "blue"}
+        {"label": "Java", "color": "orange"},
+        {"label": "FXGL", "color": "darkblue"}
       ]
     },
     {
-      "name": "Kuberneteche",
-      "description": "Un logiciel de clusterisation de conteneurs applicatifs. ",
+      "name": "Palworld EZ Deploy",
+      "description": "Une suite de scripts pour automatiser le déploiement et la sauvegarde d'un serveur Palworld. ",
       "picture": {
         "src": "https://media.npr.org/assets/img/2019/07/12/04-7278_wide-821a0b38d9823096d48b6504eebae761d19ced60-s1400-c100.jpg"
       },
-      "github": "https://github.com/rathesh77/Docker-containers-manager",
       "technologies": [
-        {"label": "Golang", "color": "cyan"},
         {"label": "Shell", "color": "green"}
       ]
     },
     {
-      "name": "Twitteche",
-      "description": "Un réseau social grandement inspiré de Twitter.",
+      "name": "The Red Butterfly",
+      "description": "Un générateur de nombres aléatoires matériel basé sur les sorties d'une souris.",
       "picture": {
         "src": "https://singularityhub.com/wp-content/uploads/2020/04/as11-40-5873_orig-NASA-Artemis-moon-space.jpg"
       },
-      "github":"https://github.com/rathesh77/twitter-clone",
-      "github2":"https://github.com/rathesh77/twitter-clone-backend",
+      "github":"https://github.com/Kakuno77/True-random-number-generator-",
       "technologies": [
-        {"label": "React", "color": "lightblue"},
-        {"label": "Sass", "color": "pink"}
-      ]
-    },
-    {
-      "name": "Route planner",
-      "description": "Un site web proposant des itinéraires optimaux pour se déplacer d'une station de transport en commun vers une autre.",
-      "picture": {
-        "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
-      },
-      "github": "https://github.com/rathesh77/Route-planner",
-      "technologies": [
-        {"label": "HTML", "color": "red"},
-        {"label": "CSS", "color": "purple"},
-        {"label": "Javascript", "color": "rgb(203, 203, 1)"}
-      ]
-    },
-    {
-      "name": "Boogle",
-      "description": "Un navigateur web",
-      "picture": {
-        "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
-      },
-      "github": "https://github.com/rathesh77/WebBrowser",
-      "technologies": [
-        {"label": "C++", "color": "pink"},
-        {"label": "Qt framework", "color": "lightgreen"},
-        {"label": "Javascript", "color": "rgb(203, 203, 1)"}
+        {"label": "C", "color": "grey"},
+        {"label": "Makefile", "color": "green"}
       ]
     },
     {
@@ -71,7 +41,7 @@
       "picture": {
         "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
       },
-      "github": "https://github.com/rathesh77/CCompiler",
+      "github": "https://github.com/Kakuno77/Compiler",
       "technologies": [
         {"label": "C", "color": "grey"},
         {"label": "Makefile", "color": "green"}
