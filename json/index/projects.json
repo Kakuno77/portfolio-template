@@ -15,20 +15,14 @@
     },
     {
       "name": "Palworld EZ Deploy",
-      "description": "Une suite de scripts pour automatiser le déploiement et la sauvegarde d'un serveur Palworld. ",
-      "picture": {
-        "src": "https://media.npr.org/assets/img/2019/07/12/04-7278_wide-821a0b38d9823096d48b6504eebae761d19ced60-s1400-c100.jpg"
-      },
+      "description": "Une suite de scripts pour automatiser le déploiement et la sauvegarde d'un serveur Palworld.",
       "technologies": [
-        {"label": "Shell", "color": "green"}
+        {"label": "Shell", "color": "lightgreen"}
       ]
     },
     {
       "name": "The Red Butterfly",
       "description": "Un générateur de nombres aléatoires matériel basé sur les sorties d'une souris.",
-      "picture": {
-        "src": "https://singularityhub.com/wp-content/uploads/2020/04/as11-40-5873_orig-NASA-Artemis-moon-space.jpg"
-      },
       "github":"https://github.com/Kakuno77/True-random-number-generator-",
       "technologies": [
         {"label": "C", "color": "grey"},
@@ -36,11 +30,8 @@
       ]
     },
     {
-      "name": "CScript",
+      "name": "Compiscript",
       "description": "Un compilateur permettant de convertir un langage maison en Javascript",
-      "picture": {
-        "src": "https://media.npr.org/assets/img/2022/08/24/apollo_16_landing_25_eva1_sta_1_duke_and_crater_as16-114-18423_wide-b008803202cb565e6aeb0ebc714bfbc81d6038aa-s1100-c50.jpg"
-      },
       "github": "https://github.com/Kakuno77/Compiler",
       "technologies": [
         {"label": "C", "color": "grey"},
