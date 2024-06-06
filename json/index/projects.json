@@ -22,7 +22,7 @@
     },
     {
       "name": "The Red Butterfly",
-      "description": "Un générateur de nombres aléatoires matériel basé sur les sorties d'une souris.",
+      "description": "Un générateur de nombres aléatoires matériel basé sur les sorties optiques (caméra) d'une souris.",
       "github":"https://github.com/Kakuno77/True-random-number-generator-",
       "technologies": [
         {"label": "C", "color": "grey"},
