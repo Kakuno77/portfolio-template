@@ -4,11 +4,11 @@
     {
       "job": "Ingénieur DevOps",
       "place": "Eridanis",
-      "date": "2021 - aujourd'hui",
+      "date": "2022 - aujourd'hui",
       "items": [
-        "Aide à l'évolution et la maintenance du produit Galaxy utilisé par la société multi-nationale <b>Amadeus</b>",
-        "Migration de la codebase vers sa dernière version du site web de crowdfunding dans l'immobilier <b>Upstone</b>",
-        "Maintenance et évolution de la solution CIRIOS pour la société <b>PNO Consultants</b>"
+        "Participer à l'intégration continue et à la livraison continue en automatisant les tests et le déploiement",
+        "Participer à la veille technologique et proposer des solutions innovantes pour améliorer l'infrastructure",
+        "Maintenance et évolution de clusters Kubernetes pour garantir une haute disponibilité et une haute performance"
       ]
     }
   ]
