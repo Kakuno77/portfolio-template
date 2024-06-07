@@ -10,7 +10,7 @@
         "banner": {
           "headline": "Programmation de scripts shell",
           "image": {
-            "src": "/img/article-web.png",
+            "src": "/img/shell.png",
             "alt": ""
           }
         },
@@ -30,7 +30,7 @@
         "banner": {
           "headline": "Rédaction de documentation technique..",
           "image": {
-            "src": "/img/article-archi-adaptee.jpg",
+            "src": "/img/redaction.jpg",
             "alt": ""
           }
         },
@@ -50,7 +50,7 @@
         "banner": {
           "headline": "Implémenter un logiciel de qualité, en choisissant des structures de données adaptées et des algorithmes pertinents afin d’assurer la robustesse du logiciel.",
           "image": {
-            "src": "/img/article-devlogiciel.jpg",
+            "src": "/img/K8S-logo.png",
             "alt": ""
           }
         },
