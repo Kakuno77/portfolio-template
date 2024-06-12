@@ -50,7 +50,7 @@
         "banner": {
           "headline": "Mise en place de pipeline d'intégration continu et de développement continu (CI/CD)",
           "image": {
-            "src": "/img/K8S-logo.png",
+            "src": "/img/cicd.png",
             "alt": ""
           }
         },
