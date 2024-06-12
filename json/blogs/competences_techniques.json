@@ -50,7 +50,7 @@
         "banner": {
           "headline": "Mise en place de pipeline d'intégration continu et de développement continu (CI/CD)",
           "image": {
-            "src": "/img/cicdsimple.png",
+            "src": "/img/cicdlogo.png",
             "alt": ""
           }
         },

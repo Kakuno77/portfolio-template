@@ -27,18 +27,18 @@
               "banner": {
                   "headline": "lorem ipsum dolor amet",
                   "image": {
-                      "src": "",
+                      "src": "/img/K8S-logo.png",
                       "alt": ""
                   }
               },
-              "title": "Réa 2",
+              "title": "Migration d'un cluster kubernetes",
               "customCss": {},
               "direction": "row",
               "elements": [
                   {
                       "type": "text",
                       "sort": 2,
-                      "content": "<p>Texte 2</p>",
+                      "content": "<p>Dans le cadre de l'évolution de nos besoins en termes de performances et de scalabilité, nous avons récemment entrepris la migration d'un de nos clusters Kubernetes vers une infrastructure plus puissante.</br>Ce projet a été motivé par l'augmentation continue de la consommation de processeur et de RAM requis pour satisfaire les besoins de nos différents clients.<h2>Planification et Préparation</h2>La migration a été minutieusement planifiée par la direction des systèmes informatiques ainsi que l'équipe technique pour répondre à leurs exigences.</br>Les principaux objectifs identifiés étaient de garantir une transition fluide, de valider la pertinence des outils existants, et de mettre à jour les composants obsolètes.</br>Un aspect crucial de la préparation a été la sauvegarde des données. Les données des différents déploiements de notre ancien cluster étaient sauvegardées quotidiennement sur un bucket, un conteneur de stockage d'objets. Nous avons vérifié que ces sauvegardes pouvaient être restaurées sans problème, garantissant ainsi l'intégrité des données durant la migration.<h2>Mise en Place du Nouveau Cluster</h2>La première étape technique a consisté à installer Kubernetes sur notre nouvelle machine.</br>Cette installation a été réalisée via un <b>pipeline CI/CD (Intégration Continue/Livraison Continue)</b> spécialement conçu pour automatiser les processus nécessaires.</br>Ce pipeline exécutait des jobs pour réinstaller les différentes applications conteneurisées qui composent la plateforme.</br>L'automatisation a joué un rôle clé dans la réinstallation des composants.</br>Dès le lancement des jobs, les applications conteneurisées ont été automatiquement déployées sur le nouveau cluster.</br> Une fois l'installation terminée, nous avons procédé à des vérifications pour nous assurer que toutes les applications fonctionnaient correctement.<h2>Migration des Données et Vérifications</h2>Après la réinstallation des composants, l'étape suivante a été de restaurer les backups sur le nouveau cluster.</br>Ce processus a été réalisé en tirant les sauvegardes précédemment stockées sur le bucket vers la nouvelle infrastructure.</br>Cette étape cruciale a permis de transférer en toute sécurité les données de l'ancien cluster vers le nouveau.</br>Une fois les données restaurées, nous avons effectué des tests approfondis pour vérifier le bon fonctionnement des applications et la conformité des données.</br>Ces tests ont confirmé que la migration s'était déroulée sans accrocs.<h2>Conclusion et Expertise</h2>En résumé, cette migration de cluster Kubernetes a été un succès grâce à une planification rigoureuse et à l'automatisation des processus.</br>Mon expertise couvre l'ensemble des opérations de déploiement, de backup et de monitoring, où je me considère à un niveau intermédiaire.</br>Cependant, en ce qui concerne les opérations de routage telles que l'utilisation de reverse proxies ou de load balancers, je me situe encore à un niveau débutant.</br>Cette expérience enrichissante a renforcé nos compétences et notre capacité à répondre aux besoins croissants de nos clients, tout en garantissant la performance et la fiabilité de leurs applications.</p>",
                       "customCss": {}
                   }
               ]
