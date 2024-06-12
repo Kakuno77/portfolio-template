@@ -11,14 +11,14 @@
                       "alt": ""
                   }
               },
-              "title": "Réa 1",
+              "title": "Migration de backups",
               "customCss": {},
               "direction": "row",
               "elements": [
                   {
                       "type": "text",
                       "sort": 2,
-                      "content": "Texte 1",
+                      "content": "Migration de backups",
                       "customCss": {}
                   }
               ]
