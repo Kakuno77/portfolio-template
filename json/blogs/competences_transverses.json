@@ -24,11 +24,11 @@
         ]
       },
       {
-        "title": "Capacité à résoudre des problèmes",
+        "title": "Résoudre des problèmes dans des environnements de production",
         "customCss": {},
         "direction": "row",
         "banner": {
-          "headline": "Capacité à résoudre des problèmes",
+          "headline": "Résoudre des problèmes dans des environnements de production",
           "image": {
             "src": "/img/article-thinking.webp",
             "alt": ""
