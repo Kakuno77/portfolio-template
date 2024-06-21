@@ -44,20 +44,20 @@
         ]
       }, 
       {
-        "title": "Communication en anglais",
+        "title": "Communication",
         "customCss": {},
         "direction": "row",
         "banner": {
-          "headline": "Communication en anglais",
+          "headline": "Communication",
           "image": {
-            "src": "/img/speaker.png",
+            "src": "/img/com.jpg",
             "alt": ""
           }
         },
         "elements": [
           {
             "type": "text",
-            "content": "<p><p>La capacité à communiquer efficacement en anglais revêt une importance cruciale dans mon quotidien puisque près de 20% de la population mondiale parle anglais.<h2>Contexte Professionnel</h2></br>A titre professionel,bien que je n'interagisse pas directement avec des clients étrangers, je suis régulièrement confronté à des courriels en copie, à la documentation technique et au code source rédigé en anglais.</br>Du point de vue professionnel, la compétence en anglais élargit mes opportunités de développement, me permettant de rester à jour sur les dernières avancées technologiques et d'approfondir ma compréhension des solutions techniques.</br>Cela renforce également ma crédibilité au sein de l'équipe en facilitant la communication claire et précise, même dans des contextes complexes.<h2>Avantages Personnels</h2>Sur le plan personnel, maîtriser l'anglais me permet de m'engager plus facilement avec des gens sur internet, mais aussi d'explorer certains hobbies ou de suivre certains films et séries dans leurs versions originales.Enfin cela enrichit mon expérience lors de voyages à l'international et permet de m'ouvrir culturellement.Communiquer en anglais est bien plus qu'une simple aptitude linguistique pour moi.C'est un outil indispensable qui favorise mon efficacité professionnelle, élargit mes perspectives personnelles et me positionne favorablement dans un marché du travail de plus en plus compétitif et internationalisé.</p>",
+            "content": "<p> En tant qu'introverti et indépendant, la communication n'a jamais été mon point fort. Mon inclination naturelle est de travailler de manière autonome, souvent en silence. Cette tendance a parfois suscité des interrogations de la part de mes collègues au sein de mon alternance d'ingénieur . Ils se demandaient sur quelles tâches je travaillais et si j'étais capable de les réaliser correctement. </br> <h2>Défis initiaux</h2> Le rôle d'un ingénieur DevOps requiert une communication constante et efficace. Le DevOps invite à la collaboration entre les équipes de développement et d'opérations pour améliorer les processus, réduire les délais de livraison et assurer une meilleure qualité des logiciels. Ainsi, il m'a fallu un travail personnel considérable pour m'adapter à ces exigences. </br> Un incident particulier a mis en lumière l'importance de la communication. Lors d'un redéploiement d'un service pour mettre à jour sa configuration, j'avais prévu une mise à jour progressive des pods, un à un. Cependant, j'avais sous-estimé le nombre de répliques nécessaires, ce qui a conduit à une surcharge des pods encore actifs pendant que les autres redémarraient. Ce manque de communication a été double : d'une part, je n'avais pas clairement expliqué ce que j'allais faire, et d'autre part, je n'ai pas immédiatement communiqué lorsque le service a rencontré des problèmes. <h2>Travail personnel</h2> Cet événement m'a poussé à entreprendre un long travail personnel tout au long de mon alternance pour m'ouvrir davantage et améliorer ma communication. J'ai appris à partager mes interrogations, à demander de l'aide lorsque j'avais des difficultés à réaliser une tâche, et à informer mes collègues lorsque j'étais disponible pour prendre en charge d'autres tâches. </br> <h2>Bénéfices</h2> Ce travail sur moi-même m'a permis de progresser significativement. J'ai découvert que partager mes défis et mes réussites contribuait à un meilleur esprit d'équipe et permettait d'avancer plus vite dans les projets. La communication ouverte et honnête a non seulement amélioré ma propre efficacité, mais a également renforcé la confiance et la collaboration au sein de l'équipe. En fin de compte, cette compétence transversale s'est révélée être un atout essentiel pour réussir dans le monde professionnel. </p>",
             "customCss": {
             }
           }
